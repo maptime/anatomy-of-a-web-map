@@ -86,19 +86,24 @@ window.onload = function() {
 </script></head><body>
 <div>Anatomy of a <em>Web Map</em></div>
 <div>By <a href="http://stamen.com/studio/alan">Alan McConchie</a> :) and <a href="http://stamen.com/studio/beth">Beth Schechter</a> :D</div>
-<div>Housekeeping!<br>You can follow along here: <a href="http://sta.mn/???">sta.mn/???</a></div>
+<div>Housekeeping!<br>You can follow along here: <a href="http://sta.mn/???">sta.mn/???</a>. Links are in blue boxes, green is just emphasis. You can comment and edit on <a href="https://github.com/maptime/anatomy-of-a-web-map/">github!</a></div>
 <div>[image: gray's anatomy? Anatomy of a single-celled organism?]</div>
+<div>We will be talking about the simplest, most generic web map. But we will note exceptions</div>
+<div>We'll be showing you a complete <em>open source</em> stack.</div>
+<div>We'll talk a lot about <em>Google</em>, but we're showing you a <em>100% Google-free stack</em></div>
 <div>[code: show the simplest possible leaflet map]</div>
 <div>What is a web map?</div>
 <div>A web map is...</div>
 <div>How is a <em>web map</em> different than a <em>digital map</em>?</div>
 <div><em>Digital</em>: involves computer, but might not be accessible by the internet</div>
-<div>A <em>web map</em> is a kind of <em>digital map</em>. And both are obviously quite different from <em>analog</em>maps, such as paper maps and atlases!</div>
+<div>A <em>web map</em> is a kind of <em>digital map</em>. And both are obviously quite different from <em>analog</em> maps, such as paper maps and atlases!</div>
+<div>We're talking about web maps that you view in a browser. Making maps for mobile devices can be similar, but we're not talking about that today</div>
+<div>We're also not talking about <em>digital globes</em> like <em>Google Earth</em></div>
 <div>History: how did web maps come to be?</div>
-<div>Digital maps: ArcGIS</div>
-<div>Web GIS is not user friendly </div>
+<div>Digital maps: ArcGIS [screenshot]</div>
+<div>Web GIS is not user friendly [screenshot]</div>
 <div>Also usually ugly</div>
-<div>Mapquest</div>
+<div>Mapquest [screenshot]</div>
 <div>Problem: slow to load</div>
 <div>MapQuest required a full page refresh to scroll or zoom, and was always aligned to tile boundaries</div>
 <div>Google Maps</div>
@@ -108,13 +113,18 @@ window.onload = function() {
 <div>This kind of map is colloquially called a <em>slippy map</em></div>
 <div>Google maps uses mercator projection, which is designed for sailors BUT it works well for flat maps</div>
 <div>And all other slippy maps and slippy map software followed Google's lead</div>
-<div>Side note: XKCD</div>
-<div></div>
+<div>Now we're ready to show you the whole anatomy!</div>
+<div>[diagram] HTML page, with a JavaScript map library, which loads tiles from a server, and a content layer from another server</div>
+<div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a> / <a href="http://modestmaps.com">Modest Maps</a> / <a href="http://polymaps.org">Polymaps</a></div>
+<div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="http://developer.here.com/web/guest/javascript-apis">Nokia HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
+<div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
 <div>Tiles: the base of a base map</div>
+<div>[is this where we talk about rasters vs vectores, and points/lines/polygons?]</div>
 <div>[copy and paste Lyzi slides about tiles through pt 2 talking about feature layers]</div>
 <div>https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=<br>https://a.tiles.mapbox.com/v3/financialtimes.map-w7l4lfi8/13/1310/3166.png<br>http://d.tile.stamen.com/watercolor/13/1310/3166.jpg</div>
-<div>Tiles are "rendered" in advance (usually) then stored in a cache</div>
-<div>Include diagram of the database, the cache, the rendering process (usually <a href="http://mapnik.org">mapnik</a>)</div>
+<div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
+<div>[Include diagram of the database, the cache, the renderer] (usually <a href="http://mapnik.org">mapnik</a>)</div>
+<div>Tiles could be a road map, a satellite image, or anything else that's a raster! [Example images]</div>
 <div>Content layers</div>
 <div>point, polygon, line</div>
 <div>interactivity: </div>
@@ -144,10 +154,13 @@ window.onload = function() {
 <div>[Do we want to make something like this?]// http://mapmeld.github.io/whichmapdoiuse/# </div>
 <div>Do I need my own tiles?</div>
 <div>No:</div>
-<div></div>
+<div>Use these! [list of examples, OSM styles, CloudMade, Stamen, MapBox, MapQuest]</div>
 <div>Yes</div>
 <div>TileMill</div>
-<div>...then host your own tiles, or host them on MapBox</div>
+<div>Will generate a pile of tiles [screenshot]. Saves them as <a href="https://www.mapbox.com/developers/mbtiles/">MBTiles</a>.</div>
+<div>Open up this file with <a href="https://github.com/mapbox/mbutil">mbutil</a>, and look at all the files! Or...</div>
+<div>Serve the tiles by running your own tile server. <a href="https://github.com/klokantech/tileserver-php/">TileServer.php</a>, or <a href="http://tilestache.org">TileStache</a>, or <a href="http://tilecache.org">TileCache</a>, or <a href="https://github.com/mapbox/tilestream">TileStream</a>, or <a href="https://github.com/chelm/mbtiles-server">mbtiles-server</a>, or <a href=http://wiki.openstreetmap.org/wiki/Mod_tile">mod_tile</a></div>
+<div>...or host them on MapBox</div>
 <div>Do I need a content layer?</div>
 <div>No</div>
 <div>Put all your data into the tiles. Possibly use UTFGrid</div>
