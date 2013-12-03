@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+
+<style type="text/css">
+
+    #mapdiv { height: 800px; }
+
+</style>
+
+</head>
+<body>
+
+
+  <div id="mapdiv"></div>
+
+  <sCrIpT>
+
+    var geojsonFeature = {
+      "type": "Feature",
+      "properties": {
+          "name": "Stamen Design",
+          "popupContent": "You are here!"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-122.4191, 37.764557]
+      }
+    };
+
+    var mapvar = L.map('mapdiv').setView([37.7706,-122.3782],12);
+
+    /*
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapvar);
+    */
+
+    var layer = new L.StamenTileLayer("watercolor");
+    //var layer = new L.StamenTileLayer("toner");
+    mapvar.addLayer(layer);
+    mapvar.options.maxZoom = 18;
+
+    /*
+    var marker = L.marker([37.764557,-122.4191]).addTo(mapvar);
+
+    marker.bindPopup("Stamen Design");
+    */
+
+    L.geoJson(geojsonFeature).addTo(mapvar);
+
+  </script>
+
+</body>
+</html>
