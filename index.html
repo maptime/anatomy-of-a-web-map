@@ -136,9 +136,9 @@ window.onload = function() {
 <div><em>Thanks y'all! <3 <3 <3</em><br>Now here goes...</div>
 <div>Each <em>zoom level</em> has its own set of tiles!</div>
 <div>Zoom level 0: <strong>1</strong> tile for the world.</div>
-<div><img src="images/zero.PNG"></div>
+<div><img src="images/tiles/toner-0-0-0.png"></div>
 <div>With each additional zoom level, the number of tiles increases exponentially.</div>
-<div>Zoom level 1: <strong>4</strong> tiles for the world.</div>
+<div><img src="images/tiles/toner-1-0-1.png"> Zoom level 1: <strong>4</strong> tiles for the world.  </div>
 <div>Zoom level 2: <strong>16</strong> tiles for the world.</div>
 <div>Any guesses how many tiles are in zoom level 3?</div>
 <div>Aw yeah, you got it. <strong>64</strong>! Y'all are great at math.</div>
@@ -151,12 +151,13 @@ window.onload = function() {
 <div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the y/x value, or the place in the grid where the tile lives.</div>
 <div>In a little bit, we will look at how to include tiles in our web map.</div>
 <div>(end of lyzi's slides)</div>
-<div>All tiles<br>=*<br>same size!<img src="images/tiles.gif">*mostly</div>
-<div>All these little tiles load <em>way faster</em> than one big map.</div>
-<div><img src="images/tiles-loading.gif"></div>
+<div>All tiles<br>=*<br>same size! 256x256 pixels<img src="images/tiles.gif">*mostly</div>
+<div><a href="https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=">https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=</a><br>https://a.tiles.mapbox.com/v3/financialtimes.map-w7l4lfi8/13/1310/3166.png<br>http://d.tile.stamen.com/watercolor/13/1310/3166.jpg</div>
+<div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
+<div>Tiles could be a road map, a satellite image, or anything else that's a raster! [Example images]</div>
+<div><img src="images/tiles-loading.gif">All these little tiles load <em>way faster</em> than one big map.</div>
 <div>Web maps like this load the tiles that are on your screen. If the map is “smart,” it will pre-load tiles outside of the screen, along the top, bottom, left, and right.</div>
-<div>This kind of map is colloquially called a <em>slippy map</em></div>
-<div><img src="images/slippy-map.gif"></div>
+<div><img src="images/slippy-map.gif">This kind of map is colloquially called a <em>slippy map</em></div>
 <div>Google maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
 <div>Speaking of projections...</div>
@@ -175,13 +176,7 @@ window.onload = function() {
 <div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a> / <a href="http://modestmaps.com">Modest Maps</a> / <a href="http://polymaps.org">Polymaps</a></div>
 <div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="http://developer.here.com/web/guest/javascript-apis">Nokia HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
 <div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
-<div>Tiles: the base of a base map</div>
-<div>[is this where we talk about rasters vs vectors, and points/lines/polygons?]</div>
 <div>[copy and paste Lyzi slides about tiles through pt 2 talking about feature layers]</div>
-<div><a href="https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=">https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=</a><br>https://a.tiles.mapbox.com/v3/financialtimes.map-w7l4lfi8/13/1310/3166.png<br>http://d.tile.stamen.com/watercolor/13/1310/3166.jpg</div>
-<div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
-<div>[Include diagram of the database, the cache, the renderer] (usually <a href="http://mapnik.org">mapnik</a>)</div>
-<div>Tiles could be a road map, a satellite image, or anything else that's a raster! [Example images]</div>
 <div>Content layers</div>
 <div>point, line, polygon</div>
 <div>interactivity: </div>
