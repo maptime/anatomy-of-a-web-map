@@ -178,7 +178,7 @@ window.onload = function() {
 <div>Tiles: the base of a base map</div>
 <div>[is this where we talk about rasters vs vectors, and points/lines/polygons?]</div>
 <div>[copy and paste Lyzi slides about tiles through pt 2 talking about feature layers]</div>
-<div>https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=<br>https://a.tiles.mapbox.com/v3/financialtimes.map-w7l4lfi8/13/1310/3166.png<br>http://d.tile.stamen.com/watercolor/13/1310/3166.jpg</div>
+<div><a href="https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=">https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=</a><br>https://a.tiles.mapbox.com/v3/financialtimes.map-w7l4lfi8/13/1310/3166.png<br>http://d.tile.stamen.com/watercolor/13/1310/3166.jpg</div>
 <div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
 <div>[Include diagram of the database, the cache, the renderer] (usually <a href="http://mapnik.org">mapnik</a>)</div>
 <div>Tiles could be a road map, a satellite image, or anything else that's a raster! [Example images]</div>
@@ -211,24 +211,19 @@ window.onload = function() {
 <div>Find these examples and more in Kai Chang's <a href="http://exposedata.com/talk/d3-geo/">d3.geo presentation</a></div>
 <div>Very powerful, but steep learning curve</div>
 <div>So.<br>Where do I start?</div>
-<div>I want to make…</div>
-<div>[Do we want to make something like this?]// http://mapmeld.github.io/whichmapdoiuse/# </div>
+<div>It depends on want to make…</div>
 <div>Do I need my own tiles?</div>
-<div>No:</div>
-<div>Use these! [list of examples, OSM styles, CloudMade, Stamen, MapBox, MapQuest]</div>
-<div>Yes:</div>
-<div>TileMill</div>
+<div>No? Use these! [list of examples, OSM styles, CloudMade, Stamen, MapBox, MapQuest]</div>
+<div>Yes? Use <a href="https://www.mapbox.com/tilemill/">TileMill</a> to design your own tiles.</div>
 <div><a href="https://www.mapbox.com/carto">CartoCSS</a> (or just carto)</div>
 <div>Will generate a pile of tiles [screenshot]. Saves them as <a href="https://www.mapbox.com/developers/mbtiles/">MBTiles</a>.</div>
-<div>Open up this file with <a href="https://github.com/mapbox/mbutil">mbutil</a>, and look at all the files! Or...</div>
+<div>You can host these files on <a href="https://www.mapbox.com/plans/">MapBox</a>, or...</div>
 <div>Serve the tiles by running your own tile server. For example: <a href="https://github.com/klokantech/tileserver-php/">TileServer.php</a> / <a href="http://tilestache.org">TileStache</a> / <a href="http://tilecache.org">TileCache</a> / <a href="https://github.com/mapbox/tilestream">TileStream</a> / <a href="https://github.com/chelm/mbtiles-server">mbtiles-server</a> / <a href=http://wiki.openstreetmap.org/wiki/Mod_tile">mod_tile</a></div>
-<div>...or host them on MapBox</div>
+<div>See Eric Theise's <a href="http://erictheise.com/maptime_platform_slides">Geo Platform tutorial</a> for all the gritty details</div>
 <div>Do I need a content layer?</div>
-<div>No:</div>
-<div>Put all your data into the tiles. Possibly use UTFGrid for interactivity</div>
-<div>Yes:</div>
-<div>Convert a Shapefile to GeoJSON with <a href="http://ogre.adc4gis.com/">OGRE</a> or write your own GeoJSON with <a href="http://geojson.io">geojson.io</a></div>
-<div>Also mention CartoDB</div>
+<div>No? Put all your data into the tiles. Possibly use UTFGrid for interactivity</div>
+<div>Yes? Convert a Shapefile to GeoJSON with <a href="http://ogre.adc4gis.com/">OGRE</a> or write your own GeoJSON with <a href="http://geojson.io">geojson.io</a></div>
+<div>Finally, <a href="http://cartodb.com">CartoDB</a>takes care of almost all of this for you!</div>
 <div><img src="images/random/soon.jpg">More: <a href="http://maptime.github.io/geolearning.html">maptime.github.io/geolearning.html</a> <p>Soon: <a href="http://omgitsmaptime.com">omgitsmaptime.com</a></div>
 
 <div>Thanks to:</div>
