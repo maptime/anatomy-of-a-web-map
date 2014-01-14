@@ -118,6 +118,7 @@ window.onload = function() {
 <div>but how about a little history:<br><em>How did web maps come to be?</em></div>
 <div>First, there were digital maps like <a href="http://www.esri.com/software/arcgis">ArcGIS</a>.</div>
 <div><img src="images/3-map-history/1-arcGIS.jpg"></div>
+<div><img src="images/3-map-history/1-arcGIS.jpg"><a href="esri.com/software/arcgis">esri.com/software/arcgis</a></div>
 <div>Although useful, ArcGIS for the Web is not user friendly :( </div>
 <div><em>Also usually ugly</em><br>(though the one we just showed was not too bad)</div>
 <div>In 1996, Mapquest launched its web service.</div>
@@ -131,14 +132,41 @@ window.onload = function() {
 <div><em>But what was the revolution?</em><br>Was it the interface?<br>The red marker?<br>The weather widget?</div>
 <div>No!</div>
 <div>It was the <em>tile. <img src="images/tiles/toner.jpg"></em></div>
-<div>Many tiles, same size:<img src="images/tiles.gif"></div>
+<div>Let's talk about tiles for a minute. And to do so, we're borrowing some info from amazing mapper <a href="http://lyzidiamond.com/">Lyzi Diamond</a>, who got a bunch of info about tiles from <a href="https://www.mapbox.com/">Mapbox</a>.</div>
+<div><em>Thanks y'all! <3 <3 <3</em><br>Now here goes...</div>
+<div>Each <em>zoom level</em> has its own set of tiles!</div>
+<div>Zoom level 0: <strong>1</strong> tile for the world.</div>
+<div><img src="images/zero.PNG"></div>
+<div>With each additional zoom level, the number of tiles increases exponentially.</div>
+<div>Zoom level 1: <strong>4</strong> tiles for the world.</div>
+<div>Zoom level 2: <strong>16</strong> tiles for the world.</div>
+<div>Any guesses how many tiles are in zoom level 3?</div>
+<div>Aw yeah, you got it. <strong>64</strong>! Y'all are great at math.</div>
+<div>Map tiles only render when you're looking at them in that moment, so tiles make maps hella fast.</div>
+<div>Map tiles are just images on the web, so you can link to them individually.</div>
+<div>For example: <a href="http://tile.openstreetmap.org/4/2/3.png">http://tile.openstreetmap.org/4/2/3.png</a></div>
+<div>In order to understand how this works, let's break down the URL.</div>
+<div>http://<em>tile.openstreetmap.org</em>/4/2/3.png -- this is the name of the tile server.</div>
+<div>http://tile.openstreetmap.org/<em>4</em>/2/3.png -- this is the z value, or the zoom level.</div>
+<div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the y/x value, or the place in the grid where the tile lives.</div>
+<div>In a little bit, we will look at how to include tiles in our web map.</div>
+<div>(end of lyzi's slides)</div>
+<div>All tiles<br>=*<br>same size!<img src="images/tiles.gif">*mostly</div>
 <div>All these little tiles load <em>way faster</em> than one big map.</div>
 <div><img src="images/tiles-loading.gif"></div>
-<div>Load the ones that are in your screen, then if the map is “smart,” it will pre-load tiles outside of the screen (top, bottom, left, right)</div>
+<div>Web maps like this load the tiles that are on your screen. If the map is “smart,” it will pre-load tiles outside of the screen, along the top, bottom, left, and right.</div>
 <div>This kind of map is colloquially called a <em>slippy map</em></div>
 <div><img src="images/slippy-map.gif"></div>
-<div>Google maps uses mercator projection, which is designed for sailors BUT it works well for flat maps</div>
-<div>And all other slippy maps and slippy map software followed Google's lead</div>
+<div>Google maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
+<div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
+<div>Speaking of projections...</div>
+<div>OMG there are so many!</div>
+<div><a href="http://www.jasondavies.com/maps/transition/"><img src="images/vandergrinten-iv.png"></a></div>
+<div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles as the base.</div>
+<div>Not surprisingly, a collection of tiles makes up what we call the map's <em>base layer.</em></div>
+<div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em>.
+<div>Here's the breakdown:</em>.
+<div><img src=""></div>
 <div>Now we're ready to show you the whole <em>web map anatomy!</em></div>
 <div>[code: show the simplest possible leaflet map]</div>
 <div><img src="images/leaflet-toner-snapshot-giant.png"><a href="http://sta.mn/v5h">sta.mn/v5h</a></div>
