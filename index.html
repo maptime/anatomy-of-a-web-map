@@ -89,7 +89,7 @@ window.onload = function() {
 <div>Housekeeping!<br>You can follow along here: <a href="http://sta.mn/qhg">sta.mn/qhg</a>. Links are in blue boxes, <em>green</em> is just emphasis. You can comment and edit on <a href="https://github.com/maptime/anatomy-of-a-web-map/">github!</a></div>
 <div>[image: gray's anatomy? Anatomy of a single-celled organism?]</div>
 <div>We will be talking about the simplest, most generic web map. But we will note exceptions</div>
-<div>We'll be showing you a complete <em>open source</em> stack.</div>
+<div>This will be a complete <em>open source</em> stack.</div>
 <div>We'll talk a lot about <em>Google</em>, but we're showing you a <em>100% Google-free stack</em></div>
 <div>[code: show the simplest possible leaflet map]</div>
 <div>What is a web map?</div>
@@ -127,7 +127,7 @@ window.onload = function() {
 <div>[Include diagram of the database, the cache, the renderer] (usually <a href="http://mapnik.org">mapnik</a>)</div>
 <div>Tiles could be a road map, a satellite image, or anything else that's a raster! [Example images]</div>
 <div>Content layers</div>
-<div>point, polygon, line</div>
+<div>point, line, polygon</div>
 <div>interactivity: </div>
 <div>There’s a limit to how much data you can have in your  content layer, because it will take more time to load. Above a certain size, vectors actually become too much data to load at a certain speed.</div>
 <div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <em>KML</em>, or more recently, <em>GeoJSON</em></div>
@@ -142,8 +142,11 @@ window.onload = function() {
 <div>So someone has to go through and chop up that data, like MapBox</div>
 <div>Exception #2: Can’t interact with features on a raster. BUT <a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (mapbox invention) makes it possible.</div>
 <div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
-<div>Exception #3: <a href="http://d3js.org">D3</a> does not exist in the world of tiles</div>
-<div>you can’t easily make road map in D3 <em>BUT</em> can do things that are clumsy in slippy maps like choropleth maps, or different map projections</div>
+<div>Exception #3: <a href="http://d3js.org">D3</a> exists outside the world of tiles</div>
+<div>you can’t easily make road map in D3 <em>BUT</em> can do things that are clumsy in slippy maps like...</div>
+<div><img src="images/d3-examples/d3_choropleth.png">choropleth maps or...</div>
+<div>cartograms or... <a href="http://sta.mn/q99">sta.mn/q99</a></div>
+<div>different map projections (in the browser!) <a href="http://sta.mn/jfs">sta.mn/jfs</a></div>
 <div>D3</div>
 <div>IS</div>
 <div>IN</div>
@@ -170,10 +173,11 @@ window.onload = function() {
 <div>Yes:</div>
 <div>Convert a Shapefile to GeoJSON with <a href="http://ogre.adc4gis.com/">OGRE</a> or write your own GeoJSON with <a href="http://geojson.io">geojson.io</a></div>
 <div>Also mention CartoDB</div>
-<div>More: http://maptime.github.io/geolearning.html</div>
+<div><img src="images/random/soon.jpg">More: <a href="http://maptime.github.io/geolearning.html">maptime.github.io/geolearning.html</a> <p>Soon: <a href="http://omgitsmaptime.com">omgitsmaptime.com</a></div>
 
 <div>Thanks to:</div>
 <div><a href="https://github.com/lyzidiamond">Lyzi Diamond</a></div>
 <div><a href="http://stamen.com">Stamen</a></div>
 <div>Everyone at <a href="http://maptime.github.io">#maptime</a></div>
 <div>You!</div>
+<div>Presentation made with <a href="http://www.macwright.org/big/">big</a></div>
