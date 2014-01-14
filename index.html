@@ -134,35 +134,26 @@ window.onload = function() {
 <div>It was the <em>tile. <img src="images/tiles/toner.jpg"></em></div>
 <div>Let's talk about tiles for a minute. And to do so, we're borrowing some info from amazing mapper <a href="http://lyzidiamond.com/">Lyzi Diamond</a>, who got a bunch of info about tiles from <a href="https://www.mapbox.com/">Mapbox</a>.</div>
 <div><em>Thanks y'all! <3 <3 <3</em><br>Now here goes...</div>
+<div>All tiles<br>=<br>same size! 256x256 pixels<br>same boundaries<img src="images/tiles.gif"></div>
+<div>Tiles could be a road map, a satellite image, or anything else that's a raster!</div>
+<div><img src="images/tiles-loading.gif">All these little tiles load <em>way faster</em> than one big map.</div>
+<div>Web maps like this load the tiles that are on your screen. If the map is “smart,” it will pre-load tiles outside of the screen, along the top, bottom, left, and right.</div>
+<div><img src="images/slippy-map.gif">This kind of map is colloquially called a <em>slippy map</em></div>
 <div>Each <em>zoom level</em> has its own set of tiles!</div>
-<div>Zoom level 0: <strong>1</strong> tile for the world.</div>
-<div><img src="images/tiles/toner-0-0-0.png"></div>
+<div><img src="images/tiles/zoom0.png"><em>Zoom level 0: one tile for the world.</em></div>
 <div>With each additional zoom level, the number of tiles increases exponentially.</div>
-<div><img src="images/tiles/toner-1-0-1.png"> Zoom level 1: <strong>4</strong> tiles for the world.  </div>
-<div>Zoom level 2: <strong>16</strong> tiles for the world.</div>
-<div>Any guesses how many tiles are in zoom level 3?</div>
-<div>Aw yeah, you got it. <strong>64</strong>! Y'all are great at math.</div>
-<div>Map tiles only render when you're looking at them in that moment, so tiles make maps hella fast.</div>
+<div><img src="images/tiles/zoom1.png"><em>Zoom level 1: 4 tiles for the world.</em></div>
+<div><img src="images/tiles/zoom2-3-4-5.png"><em>Zoom level 2, 3, 4, 5</em></div>
+<div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
 <div>Map tiles are just images on the web, so you can link to them individually.</div>
 <div>For example: <a href="http://tile.openstreetmap.org/4/2/3.png">http://tile.openstreetmap.org/4/2/3.png</a></div>
 <div>In order to understand how this works, let's break down the URL.</div>
 <div>http://<em>tile.openstreetmap.org</em>/4/2/3.png -- this is the name of the tile server.</div>
 <div>http://tile.openstreetmap.org/<em>4</em>/2/3.png -- this is the z value, or the zoom level.</div>
-<div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the y/x value, or the place in the grid where the tile lives.</div>
-<div>In a little bit, we will look at how to include tiles in our web map.</div>
-<div>(end of lyzi's slides)</div>
-<div>All tiles<br>=*<br>same size! 256x256 pixels<img src="images/tiles.gif">*mostly</div>
-<div><a href="https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=">https://mts0.google.com/vt/lyrs=m@245167685&hl=en&src=app&x=1310&y=3166&z=13&s=</a><br>https://a.tiles.mapbox.com/v3/financialtimes.map-w7l4lfi8/13/1310/3166.png<br>http://d.tile.stamen.com/watercolor/13/1310/3166.jpg</div>
-<div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
-<div>Tiles could be a road map, a satellite image, or anything else that's a raster! [Example images]</div>
-<div><img src="images/tiles-loading.gif">All these little tiles load <em>way faster</em> than one big map.</div>
-<div>Web maps like this load the tiles that are on your screen. If the map is “smart,” it will pre-load tiles outside of the screen, along the top, bottom, left, and right.</div>
-<div><img src="images/slippy-map.gif">This kind of map is colloquially called a <em>slippy map</em></div>
+<div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the x/y value, or the place in the grid where the tile lives.</div>
 <div>Google maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
-<div>Speaking of projections...</div>
-<div>OMG there are so many!</div>
-<div><a href="http://www.jasondavies.com/maps/transition/"><img src="images/vandergrinten-iv.png"></a></div>
+<div>We'll see more map projections later...!</div>
 <div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles at the base.</div>
 <div>Not surprisingly, a collection of tiles makes up what we call the map's <em>base layer.</em></div>
 <div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em>.</div>
