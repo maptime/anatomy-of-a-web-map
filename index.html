@@ -162,7 +162,10 @@ window.onload = function() {
 <div>Speaking of projections...</div>
 <div>OMG there are so many!</div>
 <div><a href="http://www.jasondavies.com/maps/transition/"><img src="images/vandergrinten-iv.png"></a></div>
-<div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles as the base.</div>
+<div>Anyway, so all other slippy maps and slippy map software followed Google's lead.</div>
+<div>Zoom 0 is the whole world in one tile!</div>
+<div>Zoom 1, etc </div>
+<div><img src="images/tiles/zoom-13-tiles.png">zoom 13</div>
 <div>Not surprisingly, a collection of tiles makes up what we call the map's <em>base layer.</em></div>
 <div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em>.
 <div>Here's the breakdown:</em>.
@@ -171,7 +174,7 @@ window.onload = function() {
 <div>[code: show the simplest possible leaflet map]</div>
 <div><img src="images/leaflet-toner-snapshot-giant.png"><a href="http://sta.mn/v5h">sta.mn/v5h</a></div>
 <div><img src="images/leaflet_code.png"></div>
-<div>[diagram] HTML page, with a JavaScript map library, which loads tiles from a server, and a content layer from another server</div>
+<div><img src="images/anatomy-of-a-web-map.png"></div>
 <div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a> / <a href="http://modestmaps.com">Modest Maps</a> / <a href="http://polymaps.org">Polymaps</a></div>
 <div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="http://developer.here.com/web/guest/javascript-apis">Nokia HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
 <div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
@@ -198,6 +201,7 @@ window.onload = function() {
 <div>So someone has to go through and chop up that data, like MapBox</div>
 <div>Exception #2: Can’t interact with features on a raster. BUT <a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (mapbox invention) makes it possible.</div>
 <div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
+<div style="color: black"><img src="images/mapbox_for_utfgrid.png">The invisible overlay would make this raster clickable!</div>
 <div>Exception #3: <a href="http://d3js.org">D3</a> exists outside the world of tiles</div>
 <div>you can’t easily make road map in D3 <em>BUT</em> can do things that are clumsy in slippy maps like...</div>
 <div style="color: black"><img src="images/d3-examples/d3_choropleth.png">choropleth maps or... <a href="http://sta.mn/jyx">sta.mn/jyx</a></div>
