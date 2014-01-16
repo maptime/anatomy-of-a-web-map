@@ -176,8 +176,8 @@ window.onload = function() {
 <div>Exception #1: Tiles are always rasters <em>EXCEPT</em> when they're not!</div>
 <div><img src="images/vector_tiles.png"><em>vector tiles!</em> What are they? <a href="http://bl.ocks.org/wboykinm/7393674">(unrelated demo)</a></div>
 <div><a href="https://www.mapbox.com/blog/vector-tiles/">vector tiles</a>: they are an alternative to a database that makes raster tiles. They still render to rasters for display</div>
-<div>Raster: ask for data to fit into tile</div>
-<div>Vector: already have vector data sliced up in the way that I will make raster tiles</div>
+<div><em>Raster:</em> ask for data to fit into tile</div>
+<div><em>Vector:</em> already have vector data sliced up in the way that I will make raster tiles</div>
 <div>So someone has to go through and chop up that data, like <a href="https://www.mapbox.com/blog/vector-tiles/">MapBox</a></div>
 <div>Exception #2: Can’t interact with features on a raster. BUT <a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (Mapbox invention) makes it possible.</div>
 <div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
@@ -194,11 +194,11 @@ window.onload = function() {
 <div>Find these examples and more in Kai Chang's <a href="http://exposedata.com/talk/d3-geo/">d3.geo presentation</a></div>
 <div>Very powerful, but steep learning curve</div>
 <div>So.<br>Where do I start?</div>
-<div>Do I need my own tiles?</div>
-<div>No? Use these! [list of examples, OSM styles, CloudMade, Stamen, MapBox, MapQuest]</div>
+<div>Do I need to make my own custom tiles?</div>
+<div>No? Use these! <a href="http://wiki.openstreetmap.org/wiki/Tiles">OpenStreetMap</a>, <a href="http://cloudmade.com/products/map-tiles">CloudMade</a>, <a href="http://maps.stamen.com">Stamen</a>, <a href="https://www.mapbox.com/tour/#maps">MapBox</a>, <a href="http://developer.mapquest.com/web/products/open/map">MapQuest</a></div>
 <div>Yes? Use <a href="https://www.mapbox.com/tilemill/">TileMill</a> to design your own tiles.</div>
 <div><img src="images/worldwide-wood.png"> <em>Pretty!</em></div>
-<div><a href="https://www.mapbox.com/carto">CartoCSS</a> (or just carto)</div>
+<div>Style your map with <a href="https://www.mapbox.com/carto">CartoCSS</a> (or just carto)</div>
 <div>You can host these files on <a href="https://www.mapbox.com/plans/">MapBox</a>, or...</div>
 <div>Serve the tiles by running your own tile server. For example: <a href="https://github.com/klokantech/tileserver-php/">TileServer.php</a> / <a href="http://tilestache.org">TileStache</a> / <a href="http://tilecache.org">TileCache</a> / <a href="https://github.com/mapbox/tilestream">TileStream</a> / <a href="https://github.com/chelm/mbtiles-server">mbtiles-server</a> / <a href=http://wiki.openstreetmap.org/wiki/Mod_tile">mod_tile</a></div>
 <div>See Eric Theise's <a href="http://erictheise.com/maptime_platform_slides">Geo Platform tutorial</a> for all the gritty details</div>
