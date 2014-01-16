@@ -116,10 +116,8 @@ window.onload = function() {
 <div><em>ok ok</em></div>
 <div>but how about a little history:<br><em>How did web maps come to be?</em></div>
 <div style="color: black"><img src="images/3-map-history/1-arcGIS.jpg">First, there were digital maps like <a href="http://www.esri.com/software/arcgis">ArcGIS</a>.</div>
-<div>Although useful, ArcGIS for the Web is not user friendly :( </div>
-<div><em>Also usually ugly</em><br>(though the one we just showed was not too bad)</div>
-<div>In 1996, Mapquest launched its web service.</div>
-<div><img src="images/3-map-history/2-Ridgefield-CT-Mapquest-out.jpg"> </div>
+<div>Although useful, GIS for the Web is not user friendly :( </div>
+<div><img src="images/3-map-history/2-Ridgefield-CT-Mapquest-out.jpg">In 1996, Mapquest launched its web service.</div>
 <div><img src="images/3-map-history/2-Ridgefield-CT-Mapquest-out.jpg"> <em>ta da!</em></div>
 <div>Directions! Online! Revolutionary!</div>
 <div>The problem: it was slow to load :(</div>
@@ -181,7 +179,7 @@ window.onload = function() {
 <div>Raster: ask for data to fit into tile</div>
 <div>Vector: already have vector data sliced up in the way that I will make raster tiles</div>
 <div>So someone has to go through and chop up that data, like MapBox</div>
-<div>Exception #2: Can’t interact with features on a raster. BUT <a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (mapbox invention) makes it possible.</div>
+<div>Exception #2: Can’t interact with features on a raster. BUT <a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (Mapbox invention) makes it possible.</div>
 <div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
 <div style="color: black"><img src="images/mapbox_for_utfgrid.png">The invisible overlay would make this raster clickable!</div>
 <div>Exception #3: <a href="http://d3js.org">D3</a> exists outside the world of tiles</div>
@@ -196,17 +194,15 @@ window.onload = function() {
 <div>Find these examples and more in Kai Chang's <a href="http://exposedata.com/talk/d3-geo/">d3.geo presentation</a></div>
 <div>Very powerful, but steep learning curve</div>
 <div>So.<br>Where do I start?</div>
-<div>It depends on want to make…</div>
 <div>Do I need my own tiles?</div>
 <div>No? Use these! [list of examples, OSM styles, CloudMade, Stamen, MapBox, MapQuest]</div>
 <div>Yes? Use <a href="https://www.mapbox.com/tilemill/">TileMill</a> to design your own tiles.</div>
 <div><a href="https://www.mapbox.com/carto">CartoCSS</a> (or just carto)</div>
-<div>Will generate a pile of tiles [screenshot]. Saves them as <a href="https://www.mapbox.com/developers/mbtiles/">MBTiles</a>.</div>
 <div>You can host these files on <a href="https://www.mapbox.com/plans/">MapBox</a>, or...</div>
 <div>Serve the tiles by running your own tile server. For example: <a href="https://github.com/klokantech/tileserver-php/">TileServer.php</a> / <a href="http://tilestache.org">TileStache</a> / <a href="http://tilecache.org">TileCache</a> / <a href="https://github.com/mapbox/tilestream">TileStream</a> / <a href="https://github.com/chelm/mbtiles-server">mbtiles-server</a> / <a href=http://wiki.openstreetmap.org/wiki/Mod_tile">mod_tile</a></div>
 <div>See Eric Theise's <a href="http://erictheise.com/maptime_platform_slides">Geo Platform tutorial</a> for all the gritty details</div>
 <div>Do I need a content layer?</div>
-<div>No? Put all your data into the tiles. Possibly use UTFGrid for interactivity</div>
+<div>No? Put all your data into the tiles, possibly using UTFGrid for interactivity</div>
 <div>Yes? Convert a Shapefile to GeoJSON with <a href="http://ogre.adc4gis.com/">OGRE</a> or write your own GeoJSON with <a href="http://geojson.io">geojson.io</a></div>
 <div>Finally, <a href="http://cartodb.com">CartoDB</a>takes care of almost all of this for you!</div>
 <div><img src="images/random/soon.jpg">More: <a href="http://maptime.github.io/geolearning.html">maptime.github.io/geolearning.html</a> <p>Soon: <a href="http://omgitsmaptime.com">omgitsmaptime.com</a></div>
