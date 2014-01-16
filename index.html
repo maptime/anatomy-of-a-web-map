@@ -91,9 +91,13 @@ window.onload = function() {
 <div>Today we will be talking about the <em>very most basic principles</em> of web mapping.</div>
 <div>We're including a little history, so you can get </div>
 <div>(There are always exceptions!)</div>
+<<<<<<< HEAD
 <div>To get there, </div>
 <div>This will be a complete <em>open source</em> stack.</div>
 <div>We'll talk a lot about <em>Google</em>, but we're going to show you a <em>100% Google-free stack</em></div>
+=======
+<div>We'll talk a lot about <em>Google</em>, but we're going to show you a <em>100% open source</em> Google-free stack</div>
+>>>>>>> 821093881de09e509a042b1bdd617ed1dfc8716b
 <div>But first, what does <em>anatomy</em> have to do with a web map?</div>
 <div>Well,</div>
 <div>Both bodies and web maps have components and systems that <em>interact and intertwine.</em></div>
@@ -113,14 +117,11 @@ window.onload = function() {
 <div><img src="images/osm.png"><a href="http://www.openstreetmap.org/">OpenStreetMap.org</a></div>
 <div><img src="images/google-map.png"><a href="https://www.google.com/maps/preview">maps.google.com</a></div>
 <div><img src="images/mapsdotstamen.png"><a href="http://maps.stamen.com">maps.stamen.com</a></div>
-<div>Making maps for mobile devices can be similar, but we're not talking about that today.</div> 
-<div>We're also not talking about <em>digital globes</em> like <em>Google Earth.</em></div>
-<div><img src="images/google-earth.png"> <a href="http://www.google.com/earth/">google.com/earth/</a></div>
+<div><img src="images/iphone_maps.jpg">Making maps for <em>mobile devices</em> can be similar, but we're not talking about that today.</div> 
+<div><img src="images/google-earth.png">We're also not talking about <em>digital globes</em> like <a href="http://www.google.com/earth/">Google Earth</a></div>
 <div><em>ok ok</em></div>
 <div>but how about a little history:<br><em>How did web maps come to be?</em></div>
-<div>First, there were digital maps like <a href="http://www.esri.com/software/arcgis">ArcGIS</a>.</div>
-<div><img src="images/3-map-history/1-arcGIS.jpg"></div>
-<div><img src="images/3-map-history/1-arcGIS.jpg"><a href="esri.com/software/arcgis">esri.com/software/arcgis</a></div>
+<div style="color: black"><img src="images/3-map-history/1-arcGIS.jpg">First, there were digital maps like <a href="http://www.esri.com/software/arcgis">ArcGIS</a>.</div>
 <div>Although useful, ArcGIS for the Web is not user friendly :( </div>
 <div><em>Also usually ugly</em><br>(though the one we just showed was not too bad)</div>
 <div>In 1996, Mapquest launched its web service.</div>
@@ -149,17 +150,20 @@ window.onload = function() {
 <div><img src="images/tiles/zoom13.png"><em>Zoom level 13</em></div>
 <div>Tiles are <em>rendered</em> in advance (usually) then stored in a cache</div>
 <div>Map tiles are just images on the web, so you can link to them individually.</div>
-<div>For example: <a href="http://tile.openstreetmap.org/4/2/3.png">http://tile.openstreetmap.org/4/2/3.png</a></div>
+<div>For example: <a href="http://tile.openstreetmap.org/4/2/6.png">http://tile.openstreetmap.org/4/2/6.png</a></div>
 <div>In order to understand how this works, let's break down the URL.</div>
-<div>http://<em>tile.openstreetmap.org</em>/4/2/3.png -- this is the name of the tile server.</div>
-<div>http://tile.openstreetmap.org/<em>4</em>/2/3.png -- this is the z value, or the zoom level.</div>
-<div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the x/y value, or the place in the grid where the tile lives.</div>
+<div>http://<em>tile.openstreetmap.org</em>/4/2/6.png -- this is the name of the tile server.</div>
+<div>http://tile.openstreetmap.org/<em>4</em>/2/6.png -- this is the z value, or the zoom level.</div>
+<div>http://tile.openstreetmap.org/4/<em>2/6</em>.png -- This is the x/y value, or the place in the grid where the tile lives.</div>
 <div>Google maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
 <div>We'll see more map projections later...!</div>
 <div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles at the base.</div>
-<div>Not surprisingly, a collection of tiles makes up what we call the map's <em>base layer.</em></div>
-<div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em>.</div>
+<div>Not surprisingly, a collection of <em>raster</em> tiles makes up what we call the map's <em>base layer.</em></div>
+<div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em> or <em>feature layers</em>.</div>
+  <div>*(Not every web map contains a feature layer, but they are fairly typical.)</div>
+<div>They are often <em>vector</em> layers (point, line, polygon). Sometimes you can interact with them (clicking to produce a popup, for example).</div>
+<div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <em>KML</em>, or more recently, <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a></div>
 <div>Here's the breakdown of how these pieces fit together:</div>
 <div><img src="images/basemap-datalayers-01.png"></div>
 <div><img src="images/basemap-datalayers-02.png"></div>
@@ -170,25 +174,16 @@ window.onload = function() {
 <div>Make sense?</div>
 <div>Great!</div>
 <div>Now we're ready to dive a little deeper into the whole <em>web map anatomy!</em></div>
-<div>[code: show the simplest possible leaflet map]</div>
-<div><img src="images/leaflet-toner-snapshot-giant.png"><a href="http://sta.mn/v5h">sta.mn/v5h</a></div>
+<div><img src="images/leaflet-toner-snapshot-giant.png">The simplest possible web map: <a href="http://sta.mn/v5h">sta.mn/v5h</a></div>
 <div><img src="images/leaflet_code.png"></div>
 <div><img src="images/anatomy-of-a-web-map.png"></div>
+<div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
 <div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a> / <a href="http://modestmaps.com">Modest Maps</a> / <a href="http://polymaps.org">Polymaps</a></div>
 <div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="http://developer.here.com/web/guest/javascript-apis">Nokia HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
-<div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
-<div>[copy and paste Lyzi slides about tiles through pt 2 talking about feature layers]</div>
-<div>Content layers</div>
-<div>point, line, polygon</div>
-<div>interactivity: </div>
-<div>There’s a limit to how much data you can have in your  content layer, because it will take more time to load. Above a certain size, vectors actually become too much data to load at a certain speed.</div>
-<div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <em>KML</em>, or more recently, <em>GeoJSON</em></div>
-<div>Content layers could also be made from transparent tiles</div>
 <div>3 exceptions to the simplified story!</div>
 <div>Exception #1: Tiles are always rasters <em>EXCEPT</em> when they're not!</div>
-<div>vector tiles! What are they?</div>
-<div>vector tiles: they are an alternative to a database that makes raster tiles. Still smush into PNG</div>
-<div>“what is difference b/t raster and vector tiles?” // put questions into the presentation.</div>
+<div><em>vector tiles!</em> What are they?</div>
+<div>vector tiles: they are an alternative to a database that makes raster tiles. They still render to rasters for display</div>
 <div>Raster: ask for data to fit into tile</div>
 <div>Vector: already have vector data sliced up in the way that I will make raster tiles</div>
 <div>So someone has to go through and chop up that data, like MapBox</div>
