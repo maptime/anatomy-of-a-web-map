@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 792 594" style="enable-background:new 0 0 792 594;" xml:space="preserve">
+<g>
+	
+		<ellipse style="fill:none;stroke:#999999;stroke-width:5;stroke-miterlimit:10;stroke-dasharray:12.0401,12.0401;" cx="426.952" cy="216.296" rx="123.223" ry="122.045"/>
+</g>
+<text transform="matrix(1 0 0 1 26.541 137.9707)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">T</tspan><tspan x="7.349" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">ile renderer</tspan></text>
+<text transform="matrix(1 0 0 1 44.8403 149.1084)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(Mapnik)</text>
+<g>
+	<text transform="matrix(1 0 0 1 611.4953 53.1143)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Feature layers</text>
+	<text transform="matrix(1 0 0 1 616.8396 66.6318)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(CSV, GeoJSON,</tspan><tspan x="-2.823" y="11.138" style="font-family:'Helvetica-Bold'; font-size:9.2812px;"> TopoJSON, KML)</tspan></text>
+</g>
+<text transform="matrix(1 0 0 1 362.1872 290.541)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:13px;">Leaflet</tspan><tspan x="-14.894" y="11.138" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(or OpenLayers)</tspan></text>
+<text transform="matrix(1 0 0 1 43.7886 242.2715)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">T</tspan><tspan x="7.349" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">ile cache</tspan></text>
+<text transform="matrix(1 0 0 1 22.6939 253.4082)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(</tspan><tspan x="3.091" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">T</tspan><tspan x="8.603" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">ileServe</tspan><tspan x="44.209" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">r</tspan><tspan x="47.32" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">, </tspan><tspan x="52.477" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">T</tspan><tspan x="57.989" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">ileStache)</tspan></text>
+<text transform="matrix(1 0 0 1 49.9572 38.3594)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Database</text>
+<text transform="matrix(1 0 0 1 56.3308 49.4971)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(PostGIS)</text>
+<text transform="matrix(1 0 0 1 188.1378 184.2295)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Raster t</tspan><tspan x="44.397" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">iles</tspan></text>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739E.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 161.7292 204.1321)">
+</image>
+<polygon style="fill:none;" points="161.729,233.482 184.119,222.216 184.119,192.866 161.729,204.132 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="161.729,204.132 161.729,233.482 184.12,222.216 184.12,192.866 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739D.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 165.7477 237.0273)">
+</image>
+<polygon style="fill:none;" points="165.748,266.378 188.138,255.111 188.138,225.761 165.748,237.027 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="165.748,237.027 165.748,266.377 188.137,255.111 188.137,225.761 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739A.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 171.5339 271.0633)">
+</image>
+<polygon style="fill:none;" points="171.534,300.414 193.924,289.147 193.924,259.797 171.534,271.063 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="171.534,271.064 171.534,300.413 193.924,289.147 193.924,259.797 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297395.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 177.5403 301.4927)">
+</image>
+<polygon style="fill:none;" points="177.54,330.843 199.93,319.576 199.93,290.226 177.54,301.493 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="177.54,301.492 177.54,330.843 199.93,319.576 199.93,290.226 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297394.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 193.5404 202.8828)">
+</image>
+<polygon style="fill:none;" points="193.54,232.233 215.93,220.966 215.93,191.616 193.54,202.883 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="193.54,202.883 193.54,232.233 215.931,220.966 215.931,191.616 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297393.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 196.16 238.2766)">
+</image>
+<polygon style="fill:none;" points="196.16,267.627 218.55,256.36 218.55,227.01 196.16,238.277 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="196.16,238.277 196.16,267.626 218.549,256.361 218.549,227.01 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973A8.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 203.345 269.7084)">
+</image>
+<polygon style="fill:none;" points="203.345,299.059 225.735,287.792 225.735,258.442 203.345,269.708 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="203.345,269.708 203.345,299.059 225.735,287.792 225.735,258.442 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AA.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 207.9527 302.742)">
+</image>
+<polygon style="fill:none;" points="207.953,332.092 230.343,320.826 230.343,291.475 207.953,302.742 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="207.953,302.742 207.953,332.092 230.343,320.826 230.343,291.475 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AE.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 225.3536 205.4476)">
+</image>
+<polygon style="fill:none;" points="225.354,234.798 247.744,223.531 247.744,194.181 225.354,205.448 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="225.353,205.447 225.353,234.798 247.744,223.531 247.744,194.181 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57E.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 230.5505 239.5446)">
+</image>
+<polygon style="fill:none;" points="230.55,268.895 252.941,257.628 252.941,228.278 230.55,239.545 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="230.55,239.545 230.55,268.895 252.94,257.628 252.94,228.278 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57D.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 236.608 271.5438)">
+</image>
+<polygon style="fill:none;" points="236.608,300.894 258.998,289.628 258.998,260.277 236.608,271.544 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="236.608,271.544 236.608,300.893 258.998,289.628 258.998,260.277 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57A.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 241.3767 302.9126)">
+</image>
+<polygon style="fill:none;" points="241.377,332.263 263.767,320.996 263.767,291.646 241.377,302.913 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="241.377,302.912 241.377,332.263 263.767,320.996 263.767,291.646 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB565.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 258.1354 206.2177)">
+</image>
+<polygon style="fill:none;" points="258.135,235.568 280.525,224.301 280.525,194.951 258.135,206.218 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="258.135,206.218 258.135,235.568 280.526,224.301 280.526,194.951 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB564.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 263.3324 238.5199)">
+</image>
+<polygon style="fill:none;" points="263.332,267.87 285.722,256.604 285.722,227.253 263.332,238.52 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="263.332,238.52 263.332,267.87 285.722,256.603 285.722,227.253 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB563.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 267.9401 271.2486)">
+</image>
+<polygon style="fill:none;" points="267.94,300.599 290.33,289.332 290.33,259.982 267.94,271.249 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="267.94,271.248 267.94,300.599 290.33,289.332 290.33,259.983 "/>
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB569.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 274.3196 301.8069)">
+</image>
+<polygon style="fill:none;" points="274.32,331.157 296.71,319.891 296.71,290.54 274.32,301.807 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<polygon style="fill:none;" points="274.32,301.807 274.32,331.157 296.71,319.891 296.71,290.541 "/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<g>
+	<g style="opacity:0.5;enable-background:new    ;">
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="543.692" y="29.264" width="26" height="33"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_2_);">
+				<defs>
+					<rect id="SVGID_3_" x="544.313" y="29.955" width="25.245" height="31.927"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_4_);">
+					<defs>
+						<rect id="SVGID_5_" x="543.692" y="29.264" width="26" height="33"/>
+					</defs>
+					<clipPath id="SVGID_6_">
+						<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_6_);">
+						<defs>
+							<rect id="SVGID_7_" x="544.313" y="29.955" width="25.245" height="31.927"/>
+						</defs>
+						<clipPath id="SVGID_8_">
+							<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+						</clipPath>
+						<g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_8_);">
+							
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB56B.png"  transform="matrix(0.1856 0 0 0.1856 544.3131 29.9548)">
+							</image>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB56E.png"  transform="matrix(0.4368 0 0 0.4368 549.8877 35.3689)">
+	</image>
+	<rect x="549.888" y="35.369" style="fill:none;" width="10.921" height="17.911"/>
+	<rect x="549.888" y="35.369" style="fill:none;" width="10.921" height="17.91"/>
+	<g style="opacity:0.5;enable-background:new    ;">
+		
+			<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB56D.png"  transform="matrix(0.1856 0 0 0.1856 555.2343 38.9101)">
+		</image>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_9_" x="560.809" y="44.324" width="10.921" height="17.911"/>
+		</defs>
+		<clipPath id="SVGID_10_">
+			<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_10_);">
+			
+				<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB58E.png"  transform="matrix(0.4368 0 0 0.4368 560.8089 44.3242)">
+			</image>
+		</g>
+	</g>
+	<g style="opacity:0.5;enable-background:new    ;">
+		<g>
+			<defs>
+				<rect id="SVGID_11_" x="560.692" y="21.264" width="26" height="33"/>
+			</defs>
+			<clipPath id="SVGID_12_">
+				<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_12_);">
+				<defs>
+					<rect id="SVGID_13_" x="560.695" y="22.031" width="25.245" height="31.928"/>
+				</defs>
+				<clipPath id="SVGID_14_">
+					<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_14_);">
+					<defs>
+						<rect id="SVGID_15_" x="560.692" y="21.264" width="26" height="33"/>
+					</defs>
+					<clipPath id="SVGID_16_">
+						<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_16_);">
+						<defs>
+							<rect id="SVGID_17_" x="560.695" y="22.031" width="25.245" height="31.927"/>
+						</defs>
+						<clipPath id="SVGID_18_">
+							<use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+						</clipPath>
+						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_18_);">
+							
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB584.png"  transform="matrix(0.1856 0 0 0.1856 560.6948 22.0311)">
+							</image>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB586.png"  transform="matrix(0.4368 0 0 0.4368 566.2694 27.4452)">
+	</image>
+	<rect x="566.269" y="27.445" style="fill:none;" width="10.921" height="17.911"/>
+	<g style="opacity:0.5;enable-background:new    ;">
+		<g>
+			<defs>
+				<rect id="SVGID_19_" x="574.692" y="30.264" width="26" height="33"/>
+			</defs>
+			<clipPath id="SVGID_20_">
+				<use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_20_);">
+				<defs>
+					<rect id="SVGID_21_" x="574.735" y="30.987" width="25.245" height="31.927"/>
+				</defs>
+				<clipPath id="SVGID_22_">
+					<use xlink:href="#SVGID_21_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_22_);">
+					<defs>
+						<rect id="SVGID_23_" x="574.692" y="30.264" width="26" height="33"/>
+					</defs>
+					<clipPath id="SVGID_24_">
+						<use xlink:href="#SVGID_23_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_24_);">
+						<defs>
+							<rect id="SVGID_25_" x="574.735" y="30.987" width="25.245" height="31.927"/>
+						</defs>
+						<clipPath id="SVGID_26_">
+							<use xlink:href="#SVGID_25_"  style="overflow:visible;"/>
+						</clipPath>
+						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_26_);">
+							
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5BA.png"  transform="matrix(0.1856 0 0 0.1856 574.735 30.9865)">
+							</image>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5BB.png"  transform="matrix(0.4368 0 0 0.4368 580.3096 36.4005)">
+	</image>
+	<rect x="580.31" y="36.401" style="fill:none;" width="10.921" height="17.911"/>
+	<g style="opacity:0.5;enable-background:new    ;">
+		<g>
+			<defs>
+				<rect id="SVGID_27_" x="532.692" y="52.264" width="26" height="33"/>
+			</defs>
+			<clipPath id="SVGID_28_">
+				<use xlink:href="#SVGID_27_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_28_);">
+				<defs>
+					<rect id="SVGID_29_" x="533.392" y="53.057" width="25.245" height="31.927"/>
+				</defs>
+				<clipPath id="SVGID_30_">
+					<use xlink:href="#SVGID_29_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_30_);">
+					<defs>
+						<rect id="SVGID_31_" x="532.692" y="52.264" width="26" height="33"/>
+					</defs>
+					<clipPath id="SVGID_32_">
+						<use xlink:href="#SVGID_31_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_32_);">
+						<defs>
+							<rect id="SVGID_33_" x="533.392" y="53.057" width="25.245" height="31.927"/>
+						</defs>
+						<clipPath id="SVGID_34_">
+							<use xlink:href="#SVGID_33_"  style="overflow:visible;"/>
+						</clipPath>
+						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_34_);">
+							
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5BC.png"  transform="matrix(0.1856 0 0 0.1856 533.392 53.0571)">
+							</image>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5BE.png"  transform="matrix(0.4368 0 0 0.4368 538.9666 58.4711)">
+	</image>
+	<rect x="538.967" y="58.471" style="fill:none;" width="10.921" height="17.911"/>
+	<g style="opacity:0.5;enable-background:new    ;">
+		<g>
+			<defs>
+				<rect id="SVGID_35_" x="565.692" y="57.264" width="26" height="33"/>
+			</defs>
+			<clipPath id="SVGID_36_">
+				<use xlink:href="#SVGID_35_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_36_);">
+				<defs>
+					<rect id="SVGID_37_" x="566.155" y="58.191" width="25.245" height="31.927"/>
+				</defs>
+				<clipPath id="SVGID_38_">
+					<use xlink:href="#SVGID_37_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_38_);">
+					<defs>
+						<rect id="SVGID_39_" x="565.692" y="57.264" width="26" height="33"/>
+					</defs>
+					<clipPath id="SVGID_40_">
+						<use xlink:href="#SVGID_39_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_40_);">
+						<defs>
+							<rect id="SVGID_41_" x="566.155" y="58.191" width="25.245" height="31.927"/>
+						</defs>
+						<clipPath id="SVGID_42_">
+							<use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
+						</clipPath>
+						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_42_);">
+							
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5B8.png"  transform="matrix(0.1856 0 0 0.1856 566.1554 58.1908)">
+							</image>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5B9.png"  transform="matrix(0.4368 0 0 0.4368 571.73 63.6049)">
+	</image>
+	<rect x="571.73" y="63.605" style="fill:none;" width="10.921" height="17.911"/>
+</g>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<g>
+	<g style="opacity:0.5;enable-background:new    ;">
+		<g>
+			<defs>
+				<rect id="SVGID_43_" x="644.93" y="107.471" width="89" height="61"/>
+			</defs>
+			<clipPath id="SVGID_44_">
+				<use xlink:href="#SVGID_43_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_44_);">
+				<defs>
+					<rect id="SVGID_45_" x="645.176" y="107.935" width="88.543" height="59.586"/>
+				</defs>
+				<clipPath id="SVGID_46_">
+					<use xlink:href="#SVGID_45_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_46_);">
+					<defs>
+						<rect id="SVGID_47_" x="644.93" y="107.471" width="89" height="61"/>
+					</defs>
+					<clipPath id="SVGID_48_">
+						<use xlink:href="#SVGID_47_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_48_);">
+						<defs>
+							<rect id="SVGID_49_" x="645.176" y="107.935" width="88.543" height="59.586"/>
+						</defs>
+						<clipPath id="SVGID_50_">
+							<use xlink:href="#SVGID_49_"  style="overflow:visible;"/>
+						</clipPath>
+						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_50_);">
+							
+								<image style="overflow:visible;" width="477" height="321" xlink:href="993653F0BFFDB588.png"  transform="matrix(0.1856 0 0 0.1856 645.1758 107.9353)">
+							</image>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<polygon style="fill:#8EB1CC;" points="671.859,129.978 694.547,114.509 723.937,139.468 707.953,157.718 684.234,150.372 
+		669.797,157.718 651.75,144.602 656.391,132.876 	"/>
+	
+		<polygon style="fill:none;stroke:#408DC1;stroke-width:2.3203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
+		671.859,129.978 694.547,114.509 723.937,139.468 707.953,157.718 684.234,150.372 669.797,157.718 651.75,144.602 
+		656.391,132.876 	"/>
+</g>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<g style="opacity:0.5;enable-background:new    ;">
+	<g>
+		<defs>
+			<rect id="SVGID_51_" x="589.23" y="95.354" width="64.226" height="33.227"/>
+		</defs>
+		<clipPath id="SVGID_52_">
+			<use xlink:href="#SVGID_51_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_52_);">
+			<defs>
+				<rect id="SVGID_53_" x="589" y="94.792" width="65" height="34"/>
+			</defs>
+			<clipPath id="SVGID_54_">
+				<use xlink:href="#SVGID_53_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_54_);">
+				<defs>
+					<rect id="SVGID_55_" x="589.23" y="95.354" width="64.226" height="33.227"/>
+				</defs>
+				<clipPath id="SVGID_56_">
+					<use xlink:href="#SVGID_55_"  style="overflow:visible;"/>
+				</clipPath>
+				<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_56_);">
+					
+						<image style="overflow:visible;" width="346" height="179" xlink:href="993653F0BFFDB5A3.png"  transform="matrix(0.1856 0 0 0.1856 589.2305 95.3545)">
+					</image>
+				</g>
+			</g>
+		</g>
+	</g>
+	<rect x="589" y="94.792" style="fill:none;" width="65" height="34"/>
+</g>
+<rect x="0" y="0" style="fill:none;" width="792" height="595"/>
+<rect x="0" y="0" style="fill:none;" width="792" height="594"/>
+<polyline id="GeoJSON_line" style="fill:none;stroke:#408DC1;stroke-width:2.3203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
+	595.805,117.435 608.696,105.216 629.836,118.808 643.758,101.928 "/>
+<g>
+	<text transform="matrix(1 0 0 1 374.1888 372.1318)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">&lt;HTML&gt;</text>
+	<text transform="matrix(1 0 0 1 375.1038 396.207)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">&lt;javascript&gt;</text>
+	<text transform="matrix(1 0 0 1 375.366 384.1406)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">&lt;css&gt;</text>
+	<text transform="matrix(1 0 0 1 374.1887 409.1211)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">&lt;/HTML&gt;</text>
+</g>
+<path id="document" style="fill:#010101;" d="M421.714,345.958l-55.952-0.368l0.406,90.631l69.502-0.446l-0.069-75.931
+	L421.714,345.958z M421.714,349.462l10.476,10.444l-10.476-0.062V349.462z M368.482,433.907v-85.634h50.918v13.886h13.887v71.748
+	H368.482z"/>
+<g>
+	<text transform="matrix(1 0 0 1 383.1377 500.6865)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Browser</text>
+	<text transform="matrix(1 0 0 1 368.1885 511.8242)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(Firefox, Chrome, </text>
+	<text transform="matrix(1 0 0 1 386.4912 522.9619)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">Safari, IE)</text>
+	<path id="browser" style="fill:#010101;" d="M457.553,453.185h-117.29c-1.904,0-3.448,1.545-3.448,3.449v87.967
+		c0,1.904,1.544,3.447,3.448,3.447h117.289c1.904,0,3.448-1.543,3.448-3.447v-87.967
+		C461.001,454.73,459.457,453.185,457.553,453.185 M454.105,460.08v8.357h-63.674c-0.387,0-0.718-0.331-0.718-0.718v-1.29
+		c0-1.111-0.434-2.155-1.226-2.944c-0.789-0.783-1.813-1.267-2.946-1.213l-17.531,0.056c-2.294,0.01-4.161,1.883-4.161,4.176v1.29
+		c0,0.253-0.13,0.424-0.21,0.5c-0.078,0.08-0.248,0.211-0.501,0.211h-0.002l-19.425-0.056v-8.366h110.394V460.08z M343.712,473.038
+		v-1.143l19.416,0.058h0.012c1.107,0,2.148-0.433,2.935-1.217c0.791-0.788,1.225-1.833,1.225-2.943v-1.291
+		c0-0.392,0.331-0.726,0.723-0.727l17.531-0.059c0.253,0,0.422,0.132,0.5,0.209c0.078,0.077,0.21,0.248,0.21,0.501v1.291
+		c0,2.299,1.87,4.166,4.167,4.166h63.674v1.153H343.712V473.038z M343.712,476.484h14.463v64.668h-14.463V476.484z M361.624,541.154
+		v-64.67h92.483v64.668h-92.483V541.154z"/>
+	<g>
+		<path style="fill:#010101;" d="M347.638,462.168c1.408,0,2.549,1.141,2.549,2.549c0,1.407-1.141,2.549-2.549,2.549
+			c-1.408,0-2.549-1.141-2.549-2.549C345.089,463.309,346.23,462.168,347.638,462.168"/>
+		<path style="fill:#010101;" d="M354.086,462.168c1.408,0,2.549,1.141,2.549,2.549c0,1.407-1.141,2.549-2.549,2.549
+			c-1.408,0-2.549-1.141-2.549-2.549C351.537,463.309,352.678,462.168,354.086,462.168"/>
+		<path style="fill:#010101;" d="M360.533,462.168c1.408,0,2.549,1.141,2.549,2.549c0,1.407-1.141,2.549-2.549,2.549
+			c-1.408,0-2.549-1.141-2.549-2.549C357.984,463.309,359.125,462.168,360.533,462.168"/>
+	</g>
+</g>
+<g id="database">
+	<path style="fill:#8EB1CC;stroke:#408DC1;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M77.131,58.38c-8.538,0-15.46,0.994-15.46,2.22v6.767c0,1.226,6.922,2.22,15.46,2.22c8.537,0,15.46-0.994,15.46-2.22V60.6
+		C92.591,59.374,85.668,58.38,77.131,58.38"/>
+	<path style="fill:#8EB1CC;stroke:#408DC1;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M77.131,72.677c-8.538,0-15.46-0.994-15.46-2.22v6.767c0,1.226,6.922,2.22,15.46,2.22c8.537,0,15.46-0.994,15.46-2.22v-6.767
+		C92.591,71.683,85.668,72.677,77.131,72.677"/>
+	<path style="fill:#8EB1CC;stroke:#408DC1;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M77.131,82.533c-8.538,0-15.46-0.995-15.46-2.221v6.768c0,1.226,6.922,2.22,15.46,2.22c8.537,0,15.46-0.994,15.46-2.22v-6.767
+		C92.591,81.539,85.668,82.533,77.131,82.533"/>
+</g>
+<g>
+	<g>
+		<text transform="matrix(1 0 0 1 145.8301 115.5488)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Styling language</text>
+		<text transform="matrix(1 0 0 1 169.8936 129.6855)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(CartoCSS)</text>
+	</g>
+	<g id="brush">
+		<path style="fill:#010101;" d="M199.636,136.773c-0.973-0.973-2.157,0.21-2.157,0.21s-5.92,5.922-7.104,7.106
+			c-1.184,1.185-4.562,2.544-4.562,2.544l3.888,3.887c0,0,1.433-3.301,2.619-4.487c1.183-1.183,7.103-7.104,7.103-7.104
+			S200.607,137.745,199.636,136.773"/>
+		<path style="fill:#010101;" d="M181.385,150.521c-1.797,4.3-1.504,6.752-4.527,7.498c11.659,2.025,11.659-6.314,11.659-6.314
+			l-3.889-3.89C184.628,147.815,182.268,148.409,181.385,150.521 M180.262,156.727c0.889-1.031,2.282-5.972,4.074-7.211
+			C185.6,150.358,184.289,154.291,180.262,156.727"/>
+	</g>
+</g>
+<g id="folder">
+	<path style="fill:#010101;" d="M55.982,271.848v17.329h-2.576c-0.708,0.001-1.284-0.581-1.284-1.286v-22.33l1.658-2.209
+		c0.282-0.375,0.898-0.683,1.367-0.683h3.404h1.709h3.403c0.47,0,1.085,0.308,1.368,0.683l1.658,2.209h19.391
+		c0.705,0,1.281,0.576,1.281,1.281v5.007H70.552l-1.658-2.21c-0.283-0.375-0.898-0.682-1.368-0.682h-3.404h-1.708h-3.404
+		c-0.47,0-1.085,0.308-1.367,0.682L55.982,271.848z"/>
+	<path style="fill:#010101;" d="M93.799,278.13H74.411l-1.661-2.204c-0.282-0.375-0.898-0.682-1.365-0.682h-3.404H66.27h-3.401
+		c-0.47,0-1.085,0.307-1.368,0.682l-1.659,2.204v22.335c0,0.705,0.576,1.281,1.279,1.281h32.678c0.708,0,1.284-0.576,1.284-1.281
+		v-21.049C95.083,278.706,94.506,278.13,93.799,278.13"/>
+</g>
+<g id="arrows">
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M165.748,154.075
+		c0,0-33.748,14.492-65.974,15.792"/>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M73.602,203.801
+		c0,0,11.755,12.564,73.093,15.906"/>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M102.693,290.226
+		c0,0,28.164,8.62,56.893-1.05"/>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M414.593,194.181
+		c14.83,23.819,17.998,44.707,18.694,71.794"/>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M292.617,206.944L292.617,206.944
+		c0,0,70.724,5.382,75.565,59.032"/>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M567.857,123
+		C481.928,166,437.15,211,396,265.877l0,0"/>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M63.917,206.944
+			c0,0,0.794,10.62,3.372,21.335"/>
+		<polygon style="fill:#010101;" points="62.499,223.213 70.123,221.908 68.267,233.996 		"/>
+	</g>
+	<polygon style="fill:#010101;" points="158.009,293.875 155.258,286.647 167.477,286.136 	"/>
+	<polygon style="fill:#010101;" points="141.126,223.296 141.659,215.58 152.966,220.236 	"/>
+	<polygon style="fill:#010101;" points="103.067,165.201 103.698,172.909 91.82,170.001 	"/>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M104.605,74.951
+			c0,0,62.746-13.413,72.935,12.049"/>
+		<polygon style="fill:#010101;" points="172.837,85.414 180.244,83.188 179.879,95.412 		"/>
+	</g>
+	<polygon style="fill:#010101;" points="364.325,264.506 372.039,263.942 369.029,275.795 	"/>
+	<polygon style="fill:#010101;" points="393.794,262.47 400.112,266.932 390.26,274.178 	"/>
+	<polygon style="fill:#010101;" points="429.423,263.986 437.15,264.334 432.765,275.75 	"/>
+	<g>
+		
+			<line style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" x1="399.98" y1="421.526" x2="399.98" y2="444.315"/>
+		<polygon style="fill:#010101;" points="395.816,438.625 403.551,438.577 399.756,450.203 		"/>
+	</g>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M104.605,67.264
+			c0,0,58.974-20.264,114.543-19.014"/>
+		<polygon style="fill:#010101;" points="217.252,52.107 216.7,44.393 228.548,47.421 		"/>
+	</g>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M283.371,74.951
+			c0,0-4.236,16.049-35.188,23.531"/>
+		<polygon style="fill:#010101;" points="248.773,94.163 251.924,101.226 239.754,102.422 		"/>
+	</g>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M290.41,76.382
+			c0,0,8.09,33.069,55.557,61.589"/>
+		<polygon style="fill:#010101;" points="341.53,140.047 344.657,132.973 353.705,141.2 		"/>
+	</g>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M573.692,132.973
+		C518,165.201,496.04,216,491.926,257l0,0"/>
+	<polygon style="fill:#010101;" points="488.427,254.032 495.726,256.591 488.237,266.26 	"/>
+	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M641.5,286.792
+		c0,0-71.507-14.828-125.238-10.998"/>
+	<polygon style="fill:#010101;" points="515.843,271.933 516.262,279.656 504.468,276.424 	"/>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M429.423,299.424
+			c0,0,32.32,29.069,12.443,58.298"/>
+		<polygon style="fill:#010101;" points="441.055,350.797 447.946,354.31 439.231,362.89 		"/>
+	</g>
+	<g>
+		<path style="fill:none;stroke:#010101;stroke-width:1.5;stroke-miterlimit:10;" d="M478.671,290.827
+			c0,0-1.181,10.459-8.508,20.918"/>
+		<polygon style="fill:#010101;" points="469.685,307.656 473.753,309.73 468.608,314.795 		"/>
+		<g>
+			<path style="fill:none;stroke:#010101;stroke-width:1.5;stroke-miterlimit:10;" d="M484.066,291.851
+				c0,0,0.22,10.523-5.651,21.863"/>
+			<polygon style="fill:#010101;" points="477.397,309.726 481.704,311.24 477.279,316.944 			"/>
+		</g>
+	</g>
+</g>
+<g id="factory" transform="matrix(2.1362 0 0 1.8263 -281.14 -175.72)">
+	<polygon id="polygon1945" style="fill:#010101;" points="162.736,197.16 157.182,193.909 157.182,197.16 151.628,193.909 
+		151.628,201.46 170.101,201.46 169.873,187.761 168.476,187.761 168.319,197.16 162.736,193.909 162.736,193.909 	"/>
+	<path id="path1947" style="fill:#010101;" d="M156.972,185.614c0.648,0.791,1.614,1.271,2.639,1.271c0.6,0,1.188-0.173,1.704-0.48
+		l0.761,0.78c-1.925,1.338-4.552,0.924-5.979-0.947L156.972,185.614L156.972,185.614z"/>
+	<path id="path1949" style="fill:#010101;" d="M168.133,186.808l1.062-0.384c-0.804-1.224-2.172-1.973-3.653-1.973
+		c-1.098,0-2.148,0.414-2.951,1.152l0.762,0.731C164.775,185.08,166.982,185.296,168.133,186.808z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 239.2865 42.9062)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Vector data tiles</text>
+	<g id="layer1" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+		<rect x="277.579" y="48.25" style="fill:none;stroke:#010101;stroke-miterlimit:10;" width="19.014" height="19.014"/>
+		
+			<path id="path3371" inkscape:connection-end="#use3189" inkscape:connection-start="#path3187" inkscape:connector-type="polyline" style="fill:none;stroke:#010101;stroke-width:1.5;stroke-linecap:square;stroke-opacity:0.3137;" d="
+			M283.371,57.654l4.947-3.78"/>
+		
+			<path id="path3968" inkscape:connection-end="#use3966" inkscape:connection-start="#path3187" inkscape:connector-type="polyline" style="fill:none;stroke:#010101;stroke-width:1.5;stroke-linecap:square;stroke-opacity:0.3137;" d="
+			M283.371,59.873l6.977,2.703"/>
+		<g id="use3189" transform="translate(8.8563363,-6.7668697)">
+			
+				<path id="path3187" sodipodi:ry="110.6117" sodipodi:cx="16.667517" sodipodi:cy="18.484772" sodipodi:rx="132.83505" sodipodi:type="arc" style="fill:#010101;stroke:#010101;" d="
+				M292.22,52.36c0,1.064-0.86,1.926-1.92,1.926s-1.92-0.862-1.92-1.926s0.86-1.926,1.92-1.926S292.22,51.296,292.22,52.36z"/>
+		</g>
+		
+			<path id="path3187_1_" sodipodi:ry="110.6117" sodipodi:cx="16.667517" sodipodi:cy="18.484772" sodipodi:rx="132.83505" sodipodi:type="arc" style="fill:#010101;stroke:#010101;" d="
+			M283.364,59.126c0,1.064-0.86,1.926-1.92,1.926s-1.92-0.862-1.92-1.926s0.86-1.926,1.92-1.926S283.364,58.062,283.364,59.126z"/>
+		<g id="use3966" transform="translate(10.886575,4.217068)">
+			
+				<path id="path3187_2_" sodipodi:ry="110.6117" sodipodi:cx="16.667517" sodipodi:cy="18.484772" sodipodi:rx="132.83505" sodipodi:type="arc" style="fill:#010101;stroke:#010101;" d="
+				M294.251,63.343c0,1.064-0.86,1.926-1.92,1.926s-1.92-0.862-1.92-1.926c0-1.064,0.86-1.926,1.92-1.926
+				S294.251,62.28,294.251,63.343z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 358.4423 135.2168)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">OpenGL / WebGL</tspan><tspan x="6.409" y="14.85" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Map Renderers</tspan></text>
+<text transform="matrix(1 0 0 1 358.9426 162.5869)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(MapboxGL, Tangram)</text>
+<g id="QXdlhN_1_">
+	<g>
+		<g>
+			<path style="fill:#010101;" d="M423.172,173.566c0.075,0.764-0.182,1.196-0.172,1.895c-1.118,0.487-1.193,2.394-1.636,3.79
+				c-0.319,1.006-0.697,2.18-1.55,2.67c-2.7,1.55-7.118,0.913-8.785-1.12c-0.413-0.504-0.938-1.47-1.292-2.239
+				c-0.546-1.187-0.604-2.956-2.153-2.326c-0.516,0.21-1.059,2.049-1.464,2.842c-0.455,0.891-1.119,2.027-1.723,2.498
+				c-1.788,1.396-6.308,1.657-8.182,0.086c-1.667-1.397-1.062-5.015-2.842-6.288c-0.014-0.646-0.241-1.079-0.172-1.809
+				c2.96-0.905,7.438-0.506,10.508,0.086c1.51,0.291,2.947,0.934,4.565,0.861c1.158-0.052,2.375-0.476,3.531-0.689
+				C415.361,173.168,419.073,172.802,423.172,173.566z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 467.1311 282.291)" style="font-family:'Helvetica-Bold'; font-size:13px;">D3.js</text>
+<g id="js_libraries">
+	<g>
+		
+			<text transform="matrix(1 0 0 1 345.9677 86.4424)" style="stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10; font-family:'Helvetica-Bold'; font-size:12.375px;">javascript mapping libraries</text>
+		<text transform="matrix(1 0 0 1 345.9677 86.4424)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">javascript mapping libraries</text>
+	</g>
+	<g>
+		
+			<text transform="matrix(1 0 0 1 402.4103 70.1836)" style="stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10; font-family:'Helvetica-Bold'; font-size:23.2031px;">{.js}</text>
+		<text transform="matrix(1 0 0 1 402.4103 70.1836)" style="font-family:'Helvetica-Bold'; font-size:23.2031px;">{.js}</text>
+	</g>
+</g>
+<path style="fill:#010101;" d="M717.317,318.166v3.486h-52.289h-3.486v-3.486v-52.289h3.486v10.458h3.486v3.486h-3.486v6.972h3.486
+	v3.486h-3.486v6.972h3.486v3.486h-3.486v6.972h3.486v3.486h-3.486v6.972H717.317z M678.972,265.877H672v48.803h6.972V265.877z
+	 M689.43,276.335h-6.972v38.345h6.972V276.335z M699.887,286.792h-6.972v27.887h6.972V286.792z M710.345,297.25h-6.972v17.43h6.972
+	V297.25z"/>
+<text transform="matrix(1 0 0 1 661.9838 242.2705)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">(non-map</tspan><tspan x="7.445" y="14.85" style="font-family:'Helvetica-Bold'; font-size:12.375px;">charts)</tspan></text>
+<text transform="matrix(1 0 0 1 453.4916 299.4238)" style="font-family:'Helvetica-Bold'; font-size:6px;">canvas</text>
+<text transform="matrix(1 0 0 1 485.0682 307.6562)" style="font-family:'Helvetica-Bold'; font-size:6px;">svg</text>
+</svg>
