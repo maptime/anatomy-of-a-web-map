@@ -13,89 +13,89 @@
 	<text transform="matrix(1 0 0 1 616.8396 66.6318)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(CSV, GeoJSON,</tspan><tspan x="-2.823" y="11.138" style="font-family:'Helvetica-Bold'; font-size:9.2812px;"> TopoJSON, KML)</tspan></text>
 </g>
 <text transform="matrix(1 0 0 1 362.1872 290.541)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:13px;">Leaflet</tspan><tspan x="-14.894" y="11.138" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(or OpenLayers)</tspan></text>
-<text transform="matrix(1 0 0 1 43.7886 242.2715)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">T</tspan><tspan x="7.349" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">ile cache</tspan></text>
-<text transform="matrix(1 0 0 1 22.6939 253.4082)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(</tspan><tspan x="3.091" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">T</tspan><tspan x="8.603" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">ileServe</tspan><tspan x="44.209" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">r</tspan><tspan x="47.32" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">, </tspan><tspan x="52.477" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">T</tspan><tspan x="57.989" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">ileStache)</tspan></text>
+<text transform="matrix(1 0 0 1 18.686 242.2715)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">T</tspan><tspan x="7.349" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">ile cache / server</tspan></text>
+<text transform="matrix(1 0 0 1 21.5801 253.4082)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(</tspan><tspan x="3.091" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">T</tspan><tspan x="8.603" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">ileServe</tspan><tspan x="44.209" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">r</tspan><tspan x="47.32" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">, </tspan><tspan x="52.477" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">T</tspan><tspan x="57.989" y="0" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">ileStache,</tspan><tspan x="31.571" y="11.138" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">Tessera)</tspan></text>
 <text transform="matrix(1 0 0 1 49.9572 38.3594)" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Database</text>
 <text transform="matrix(1 0 0 1 56.3308 49.4971)" style="font-family:'Helvetica-Bold'; font-size:9.2812px;">(PostGIS)</text>
 <text transform="matrix(1 0 0 1 188.1378 184.2295)"><tspan x="0" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">Raster t</tspan><tspan x="44.397" y="0" style="font-family:'Helvetica-Bold'; font-size:12.375px;">iles</tspan></text>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <rect x="0" y="0" style="fill:none;" width="792" height="594"/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739E.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 161.7292 204.1321)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739C.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 161.7292 204.1321)">
 </image>
 <polygon style="fill:none;" points="161.729,233.482 184.119,222.216 184.119,192.866 161.729,204.132 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="161.729,204.132 161.729,233.482 184.12,222.216 184.12,192.866 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739D.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 165.7477 237.0273)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297392.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 165.7477 237.0273)">
 </image>
 <polygon style="fill:none;" points="165.748,266.378 188.138,255.111 188.138,225.761 165.748,237.027 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="165.748,237.027 165.748,266.377 188.137,255.111 188.137,225.761 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229739A.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 171.5339 271.0633)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297390.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 171.5339 271.0633)">
 </image>
 <polygon style="fill:none;" points="171.534,300.414 193.924,289.147 193.924,259.797 171.534,271.063 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="171.534,271.064 171.534,300.413 193.924,289.147 193.924,259.797 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297395.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 177.5403 301.4927)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297391.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 177.5403 301.4927)">
 </image>
 <polygon style="fill:none;" points="177.54,330.843 199.93,319.576 199.93,290.226 177.54,301.493 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="177.54,301.492 177.54,330.843 199.93,319.576 199.93,290.226 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297394.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 193.5404 202.8828)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229738E.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 193.5404 202.8828)">
 </image>
 <polygon style="fill:none;" points="193.54,232.233 215.93,220.966 215.93,191.616 193.54,202.883 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="193.54,202.883 193.54,232.233 215.931,220.966 215.931,191.616 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB2297393.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 196.16 238.2766)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB229738F.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 196.16 238.2766)">
 </image>
 <polygon style="fill:none;" points="196.16,267.627 218.55,256.36 218.55,227.01 196.16,238.277 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="196.16,238.277 196.16,267.626 218.549,256.361 218.549,227.01 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973A8.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 203.345 269.7084)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AC.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 203.345 269.7084)">
 </image>
 <polygon style="fill:none;" points="203.345,299.059 225.735,287.792 225.735,258.442 203.345,269.708 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="203.345,269.708 203.345,299.059 225.735,287.792 225.735,258.442 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AA.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 207.9527 302.742)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AD.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 207.9527 302.742)">
 </image>
 <polygon style="fill:none;" points="207.953,332.092 230.343,320.826 230.343,291.475 207.953,302.742 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="207.953,302.742 207.953,332.092 230.343,320.826 230.343,291.475 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AE.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 225.3536 205.4476)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="EF62554BB22973AF.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 225.3536 205.4476)">
 </image>
 <polygon style="fill:none;" points="225.354,234.798 247.744,223.531 247.744,194.181 225.354,205.448 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="225.353,205.447 225.353,234.798 247.744,223.531 247.744,194.181 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57E.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 230.5505 239.5446)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57C.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 230.5505 239.5446)">
 </image>
 <polygon style="fill:none;" points="230.55,268.895 252.941,257.628 252.941,228.278 230.55,239.545 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="230.55,239.545 230.55,268.895 252.94,257.628 252.94,228.278 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57D.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 236.608 271.5438)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB562.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 236.608 271.5438)">
 </image>
 <polygon style="fill:none;" points="236.608,300.894 258.998,289.628 258.998,260.277 236.608,271.544 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="236.608,271.544 236.608,300.893 258.998,289.628 258.998,260.277 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB57A.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 241.3767 302.9126)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB560.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 241.3767 302.9126)">
 </image>
 <polygon style="fill:none;" points="241.377,332.263 263.767,320.996 263.767,291.646 241.377,302.913 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="241.377,302.912 241.377,332.263 263.767,320.996 263.767,291.646 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB565.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 258.1354 206.2177)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB561.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 258.1354 206.2177)">
 </image>
 <polygon style="fill:none;" points="258.135,235.568 280.525,224.301 280.525,194.951 258.135,206.218 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="258.135,206.218 258.135,235.568 280.526,224.301 280.526,194.951 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB564.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 263.3324 238.5199)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB56E.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 263.3324 238.5199)">
 </image>
 <polygon style="fill:none;" points="263.332,267.87 285.722,256.604 285.722,227.253 263.332,238.52 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="263.332,238.52 263.332,267.87 285.722,256.603 285.722,227.253 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB563.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 267.9401 271.2486)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB56F.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 267.9401 271.2486)">
 </image>
 <polygon style="fill:none;" points="267.94,300.599 290.33,289.332 290.33,259.982 267.94,271.249 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
 <polygon style="fill:none;" points="267.94,271.248 267.94,300.599 290.33,289.332 290.33,259.983 "/>
-<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB569.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 274.3196 301.8069)">
+<image style="overflow:visible;" width="256" height="256" xlink:href="993653F0BFFDB56A.jpg"  transform="matrix(0.0875 -0.044 0 0.1146 274.3196 301.8069)">
 </image>
 <polygon style="fill:none;" points="274.32,331.157 296.71,319.891 296.71,290.54 274.32,301.807 "/>
 <rect x="0" y="0" style="fill:none;" width="792" height="595"/>
@@ -146,7 +146,7 @@
 						</clipPath>
 						<g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_8_);">
 							
-								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB56B.png"  transform="matrix(0.1856 0 0 0.1856 544.3131 29.9548)">
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB56A.png"  transform="matrix(0.1856 0 0 0.1856 544.3131 29.9548)">
 							</image>
 						</g>
 					</g>
@@ -155,13 +155,13 @@
 		</g>
 	</g>
 	
-		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB56E.png"  transform="matrix(0.4368 0 0 0.4368 549.8877 35.3689)">
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB56C.png"  transform="matrix(0.4368 0 0 0.4368 549.8877 35.3689)">
 	</image>
 	<rect x="549.888" y="35.369" style="fill:none;" width="10.921" height="17.911"/>
 	<rect x="549.888" y="35.369" style="fill:none;" width="10.921" height="17.91"/>
 	<g style="opacity:0.5;enable-background:new    ;">
 		
-			<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB56D.png"  transform="matrix(0.1856 0 0 0.1856 555.2343 38.9101)">
+			<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB563.png"  transform="matrix(0.1856 0 0 0.1856 555.2343 38.9101)">
 		</image>
 	</g>
 	<g>
@@ -173,7 +173,7 @@
 		</clipPath>
 		<g style="clip-path:url(#SVGID_10_);">
 			
-				<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB58E.png"  transform="matrix(0.4368 0 0 0.4368 560.8089 44.3242)">
+				<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB58C.png"  transform="matrix(0.4368 0 0 0.4368 560.8089 44.3242)">
 			</image>
 		</g>
 	</g>
@@ -208,7 +208,7 @@
 						</clipPath>
 						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_18_);">
 							
-								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB584.png"  transform="matrix(0.1856 0 0 0.1856 560.6948 22.0311)">
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5B0.png"  transform="matrix(0.1856 0 0 0.1856 560.6948 22.0311)">
 							</image>
 						</g>
 					</g>
@@ -217,7 +217,7 @@
 		</g>
 	</g>
 	
-		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB586.png"  transform="matrix(0.4368 0 0 0.4368 566.2694 27.4452)">
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5B1.png"  transform="matrix(0.4368 0 0 0.4368 566.2694 27.4452)">
 	</image>
 	<rect x="566.269" y="27.445" style="fill:none;" width="10.921" height="17.911"/>
 	<g style="opacity:0.5;enable-background:new    ;">
@@ -251,7 +251,7 @@
 						</clipPath>
 						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_26_);">
 							
-								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5BA.png"  transform="matrix(0.1856 0 0 0.1856 574.735 30.9865)">
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5B2.png"  transform="matrix(0.1856 0 0 0.1856 574.735 30.9865)">
 							</image>
 						</g>
 					</g>
@@ -260,7 +260,7 @@
 		</g>
 	</g>
 	
-		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5BB.png"  transform="matrix(0.4368 0 0 0.4368 580.3096 36.4005)">
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5B3.png"  transform="matrix(0.4368 0 0 0.4368 580.3096 36.4005)">
 	</image>
 	<rect x="580.31" y="36.401" style="fill:none;" width="10.921" height="17.911"/>
 	<g style="opacity:0.5;enable-background:new    ;">
@@ -294,7 +294,7 @@
 						</clipPath>
 						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_34_);">
 							
-								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5BC.png"  transform="matrix(0.1856 0 0 0.1856 533.392 53.0571)">
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5B4.png"  transform="matrix(0.1856 0 0 0.1856 533.392 53.0571)">
 							</image>
 						</g>
 					</g>
@@ -303,7 +303,7 @@
 		</g>
 	</g>
 	
-		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5BE.png"  transform="matrix(0.4368 0 0 0.4368 538.9666 58.4711)">
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5B5.png"  transform="matrix(0.4368 0 0 0.4368 538.9666 58.4711)">
 	</image>
 	<rect x="538.967" y="58.471" style="fill:none;" width="10.921" height="17.911"/>
 	<g style="opacity:0.5;enable-background:new    ;">
@@ -337,7 +337,7 @@
 						</clipPath>
 						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_42_);">
 							
-								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5B8.png"  transform="matrix(0.1856 0 0 0.1856 566.1554 58.1908)">
+								<image style="overflow:visible;" width="136" height="172" xlink:href="993653F0BFFDB5B6.png"  transform="matrix(0.1856 0 0 0.1856 566.1554 58.1908)">
 							</image>
 						</g>
 					</g>
@@ -346,7 +346,7 @@
 		</g>
 	</g>
 	
-		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5B9.png"  transform="matrix(0.4368 0 0 0.4368 571.73 63.6049)">
+		<image style="overflow:visible;" width="25" height="41" xlink:href="993653F0BFFDB5B7.png"  transform="matrix(0.4368 0 0 0.4368 571.73 63.6049)">
 	</image>
 	<rect x="571.73" y="63.605" style="fill:none;" width="10.921" height="17.911"/>
 </g>
@@ -385,7 +385,7 @@
 						</clipPath>
 						<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_50_);">
 							
-								<image style="overflow:visible;" width="477" height="321" xlink:href="993653F0BFFDB588.png"  transform="matrix(0.1856 0 0 0.1856 645.1758 107.9353)">
+								<image style="overflow:visible;" width="477" height="321" xlink:href="993653F0BFFDB589.png"  transform="matrix(0.1856 0 0 0.1856 645.1758 107.9353)">
 							</image>
 						</g>
 					</g>
@@ -425,7 +425,7 @@
 				</clipPath>
 				<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_56_);">
 					
-						<image style="overflow:visible;" width="346" height="179" xlink:href="993653F0BFFDB5A3.png"  transform="matrix(0.1856 0 0 0.1856 589.2305 95.3545)">
+						<image style="overflow:visible;" width="346" height="179" xlink:href="993653F0BFFDB59C.png"  transform="matrix(0.1856 0 0 0.1856 589.2305 95.3545)">
 					</image>
 				</g>
 			</g>
@@ -494,13 +494,13 @@
 	</g>
 </g>
 <g id="folder">
-	<path style="fill:#010101;" d="M55.982,271.848v17.329h-2.576c-0.708,0.001-1.284-0.581-1.284-1.286v-22.33l1.658-2.209
+	<path style="fill:#010101;" d="M55.982,278.848v17.329h-2.576c-0.708,0.001-1.284-0.581-1.284-1.286v-22.33l1.658-2.209
 		c0.282-0.375,0.898-0.683,1.367-0.683h3.404h1.709h3.403c0.47,0,1.085,0.308,1.368,0.683l1.658,2.209h19.391
 		c0.705,0,1.281,0.576,1.281,1.281v5.007H70.552l-1.658-2.21c-0.283-0.375-0.898-0.682-1.368-0.682h-3.404h-1.708h-3.404
-		c-0.47,0-1.085,0.308-1.367,0.682L55.982,271.848z"/>
-	<path style="fill:#010101;" d="M93.799,278.13H74.411l-1.661-2.204c-0.282-0.375-0.898-0.682-1.365-0.682h-3.404H66.27h-3.401
+		c-0.47,0-1.085,0.308-1.367,0.682L55.982,278.848z"/>
+	<path style="fill:#010101;" d="M93.799,285.13H74.411l-1.661-2.204c-0.282-0.375-0.898-0.682-1.365-0.682h-3.404H66.27h-3.401
 		c-0.47,0-1.085,0.307-1.368,0.682l-1.659,2.204v22.335c0,0.705,0.576,1.281,1.279,1.281h32.678c0.708,0,1.284-0.576,1.284-1.281
-		v-21.049C95.083,278.706,94.506,278.13,93.799,278.13"/>
+		v-21.049C95.083,285.706,94.506,285.13,93.799,285.13"/>
 </g>
 <g id="arrows">
 	<path style="fill:none;stroke:#010101;stroke-width:2.3203;stroke-miterlimit:10;" d="M165.748,154.075
