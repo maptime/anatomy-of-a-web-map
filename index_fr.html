@@ -1,0 +1,248 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type='text/css'>
+body {
+  font-family: 'Helvetica';
+  letter-spacing:-5px;
+  background:#000;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+
+h1, h2, h3, p {
+  margin:0;
+}
+
+em, a {
+  font-style:normal;
+  color:#8dbd0c;
+}
+
+a {
+  background: #34d0e7;
+  color:#000;
+  text-decoration:none;
+}
+
+img {
+  width:100%;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0;
+  left:0;
+}
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), cur = 0;
+    if (!s) return;
+    function go(n) {
+        cur = n;
+        var i = 1e3, e = s[n];
+        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
+        e.style.display = 'inline';
+        e.style.fontSize = i + 'px';
+        if (e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+            e.firstChild.style.display = 'none';
+        } else {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = e.style.backgroundColor;
+        }
+        while (
+            e.offsetWidth > window.innerWidth ||
+            e.offsetHeight > window.innerHeight) {
+            e.style.fontSize = (i -= 10) + 'px';
+            if (i < 0) break;
+        }
+        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
+        if (window.location.hash !== n) window.location.hash = n;
+        document.title = e.textContent || e.innerText;
+    }
+    document.onclick = function() {
+        go(++cur % (s.length));
+    };
+    document.onkeydown = function(e) {
+        (e.which === 39) && go(Math.min(s.length - 1, ++cur));
+        (e.which === 37) && go(Math.max(0, --cur));
+    };
+    function parse_hash() {
+        return Math.max(Math.min(
+            s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    }
+    if (window.location.hash) cur = parse_hash() || cur;
+    window.onhashchange = function() {
+        var c = parse_hash();
+        if (c !== cur) go(c);
+    };
+
+    go(cur);
+};
+</script></head><body>
+<div>Anatomie d'une <em>Carte web</em></div>
+<div>Par <a href="http://stamen.com/studio/alan">Alan McConchie</a> :) et <a href="http://stamen.com/studio/beth">Beth Schechter</a> :D</div>
+<div>Traduction / adaptation / ajout de trucs random: <a href="https://github.com/nerik">Erik Escoffier</a></div>
+<div>Source/follow along <a href="https://github.com/nerik/anatomy-of-a-web-map">github!</a></div>
+<div>C'est parti :)</div>
+<div>Je vais vous parler des <em>principes de base</em> des cartes sur le web.</div>
+<div>Avec des vrais morceaux d'histoire dedans, pour que vous ayez une idée de comment on en est arrivés là</div>
+<div>Je vais beaucoup vous parler de <em>Google</em>, mais l'objectif est : une stack <em>100% open source</em> et <em>open data</em></div>
+<div><em>données</em><br>+ représentation graphique<br>=carte<br></div>
+<div><img src="http://resize2-gulli.ladmedia.fr/r/611,599,center-middle,ffffff/img/var/jeunesse/storage/images/gulli/chaine-tv/dessins-animes/les-schtroumpfs/personnages/schtroumpf-a-lunettes/21224902-7-fre-FR/Schtroumpf-a-lunettes_original_backup.jpg"><em>(= dataviz représentant des données géospatiales)</em></div>
+<div>Et sinon c'est quoi le rapport entre <em>anatomie</em> et cartes web?</div>
+<div>En fait,</div>
+<div>Les cartes web comme le corps humain ont des tas de systèmes qui <em>intéragissent entre eux.</em></div>
+<div><img src="images/0-anatomy-dude/anatomy1.png"></div>
+<div><img src="images/0-anatomy-dude/anatomy2.png"></div>
+<div><img src="images/0-anatomy-dude/anatomy3.png"></div>
+<div><img src="images/0-anatomy-dude/anatomy4.png"></div>
+<div>Le cerveau, l'estomac des cartes: <em>styles, tuiles, servers, etc.</em></div>
+<div>Les cellules des cartes : <em>les données</em></div>
+<div>Parfois ça ressemble plus à ça</div>
+<div><img src="https://media1.giphy.com/media/UTqrTRCQPKrT2/200.gif" alt=""></div>
+<div>Et donc,</div>
+<div>C'est quoi <em>exactement</em> une carte web?</div>
+<div>À la place d'une réponse, une autre question:</div>
+<div>Quelle est la différence entre <em>une carte web</em> et <em>une carte numérique</em>?</div>
+<div><em>Numérique</em>: sur un écran mais pas forcément accessible par internet.</div>
+<div>Une <em>carte web</em> est un genre de <em>carte numérique</em>.</div>
+<div>Les deux sont très différents des cartes <em>analogiques</em> (cartes papier, atlas)</div>
+<div><img src="http://www.centcols.org/calques/ign/TOP100/carteBleueAssemblage.jpg" alt=""></div>
+<div>On parle donc de cartes dans le navigateur, du genre...</div>
+<div><img src="images/osm.png"><a href="http://www.openstreetmap.org/">OpenStreetMap.org</a></div>
+<div><img src="images/google-map.png"><a href="https://www.google.com/maps/preview">maps.google.com</a></div>
+<div><img src="images/mapsdotstamen.png"><a href="http://maps.stamen.com">maps.stamen.com</a></div>
+<div><img src="images/iphone_maps.jpg">Les cartes sur <em>mobile</em> sont similaires, mais différentes. C'est compliqué :)</div>
+<div><img src="images/google-earth.png">Les <em>globes numériques</em> comme <a href="http://www.google.com/earth/">Google Earth</a> sont encore un autre genre de bestiau</div>
+<div>On parlera plus tard de <em>WebGL</em> :)</div>
+<div>un peu d'histoire:</div>
+<div style="color: black"><img src="images/3-map-history/1-arcGIS.jpg">Les gens ont commencé à faire des cartes sur ordinateur : <a href="http://www.esri.com/software/arcgis">ArcGIS, QGIS</a>.</div>
+<div><img src="http://www.egisassociates.com/tl_files/egis/Products/arcgisdesktop.jpg" alt=""></div>
+<div><img src="http://documentation.qgis.org/2.0/en/_images/startup.png" alt=""></div>
+<div style="color: black"><img src="images/3-map-history/2-Ridgefield-CT-Mapquest-out.jpg">En 1996, Mapquest lance son service web.</div>
+<div><img src="images/3-map-history/2-Ridgefield-CT-Mapquest-out.jpg"></div>
+<div>Itinéraires! En ligne! Révolutionnaire!</div>
+<div>En France on a eu Mappy!</div>
+<div>Problème: long à charger...</div>
+<div>Il fallait rafraîchir la page pour <em>zoomer</em> ou <em>panner</em>.</div>
+<div>2005 : Google Maps, la vraie révolution.</div>
+<div><img src="images/3-map-history/3-old-google-maps-1.JPG"></div>
+<div><em>Révolution de quoi?</em><br>L'interface?<br>Le marqueur rouge?<br>Le widget météo?</div>
+<div>Non!<br>(un peu quand même)</div>
+<div>La révolution c'était la <em>tuile</em> (<em>tile</em> en anglais).</div>
+<div>voila: <img src="images/tiles/toner.jpg"></div>
+<div>Une tuile <br>=<br>image de 256x256 pixels<br><img src="images/tiles.gif"></div>
+<div><a href="http://www.johnjcz.com/leaflet-randomtilelayer/">Random tiles!</a></div>
+<div>Un tuile peut représenter un bout de carte routière, photo satellite, peu importe : c'est une image</div>
+<div><img src="images/tiles-loading.gif">Plein de petites tuiles se chargent <em>beaucoup + vite</em> qu'un seule grande carte.</div>
+<div>Chargement dynamique (viewport et hors viewport).</div>
+<div><img src="images/slippy-map.gif">On appelle ça une <em>slippy map</em></div>
+<div><img src="http://resize2-gulli.ladmedia.fr/r/611,599,center-middle,ffffff/img/var/jeunesse/storage/images/gulli/chaine-tv/dessins-animes/les-schtroumpfs/personnages/schtroumpf-a-lunettes/21224902-7-fre-FR/Schtroumpf-a-lunettes_original_backup.jpg"></div>
+<div>Un niveau de <em>zoom</em> = un set de tuiles</div>
+<div><img src="images/tiles/zoom0.png"><em>Zoom level 0: une tuile pour la Terre.</em></div>
+<div>À chaque niveau de zoom, le nombre de tuiles augmente exponentiellement</div>
+<div><img src="images/tiles/zoom1.png"><em>Zoom level 1: 4 tuiles pour la Terre.</em></div>
+<div><img src="images/tiles/zoom2-3-4-5.png"><em>Zoom level 2, 3, 4, 5</em></div>
+<div><img src="images/tiles/zoom13.png"><em>Zoom level 13</em></div>
+
+<div>Les tuiles sont <em>rendues</em> à l'avance et stockées en cache</div>
+<div>Les tuiles sont comme n'importe quelle image, donc linkables.</div>
+<div>Exemple: <a href="http://tile.openstreetmap.org/4/2/6.png">http://tile.openstreetmap.org/4/2/6.png</a></div>
+<div>Tout est dans l'URL:</div>
+<div>http://<em>tile.openstreetmap.org</em>/4/2/6.png<br>nom du serveur de tuiles.</div>
+<div>http://tile.openstreetmap.org/<em>4</em>/2/6.png<br>z value / zoom level.</div>
+<div>http://tile.openstreetmap.org/4/<em>2/6</em>.png<br>x/y value, la place de la tuile sur la grille.</div>
+<div style="color: black"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Mercator.jpg" alt=""> Google maps utilise la projection de <em>Mercator</em></div>
+<div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
+<div>En fait c'est une autre "invention" de Google: <em>Web Mercator</em></div>
+<div>= la Terre dans un <em>carré</em></div>
+<div>: <img src="https://alastaira.files.wordpress.com/2011/01/image_thumb23.png?w=516&h=516" alt=""></div>
+<div><a href="http://geojson.io/#id=gist:anonymous/46d0bfe2f606a0b60818&map=0/-2/11">la preuve :)</a></div>
+<div>On reparlera de projections !</div>
+<div>Toutes les autres "slippy maps" utilisent ce standard à base de tuiles.</div>
+<div>Donc ces tuiles (une collection d'images) forment <em>le base layer/la basemap.</em></div>
+<div>Quand on ajoute des marqueurs, etc : <em>data layers</em>, <em>content layers</em> ou <em>feature layers</em>.</div>
+  <div>*(Toutes les cartes web n'en ont pas, mais c'est fréquent)</div>
+<div>Ce sont souvent des layers <em>vectoriels</em> (point, ligne, polygone).</div>
+<div>Parfois avec de l'interaction (cliquer sur un marqueur ouvre une popup).</div>
+<div><img src="images/basemap-datalayers-01.png"></div>
+<div><img src="images/basemap-datalayers-02.png"></div>
+<div><img src="images/basemap-datalayers-03.png"></div>
+<div><img src="images/basemap-datalayers-04.png"></div>
+<div><img src="images/basemap-datalayers-05.png"></div>
+<div><img src="images/basemap-datalayers-06.png"></div>
+<div>Formats de fichiers: les SIG/GIS utilisent des <em>shapefiles</em>, mais pour le web on préfère le <em>KML</em>, et surtout le <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a> (et topoJSON)</div>
+<div>Allons un peu plus loin dans <em>l'anatomie d'une carte web!</em></div>
+<div><img src="https://media0.giphy.com/media/wfxIaYlSjLqGQ/200.gif"></div>
+<div><img src="images/leaflet-toner-snapshot-giant.png"><em>The simplest possible web map:</em> <a href="http://sta.mn/v5h">sta.mn/v5h</a></div>
+<div><img src="images/leaflet_code.png"></div>
+<div><img src="images/anatomy-of-a-web-map.png"></div>
+<div>La librairie JS récupère les tuiles, ajoute les content layers, gère l'interaction.</div>
+<div>L'incontournable: <a href="http://leafletjs.com">Leaflet</a>, d'autres options: <a href="http://openlayers.org">OpenLayers</a> / <a href="http://modestmaps.com">Modest Maps</a> / <a href="http://polymaps.org">Polymaps</a></div>
+<div>Et aussi: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="http://developer.here.com/web/guest/javascript-apis">Nokia HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
+<div><a href="https://www.youtube.com/watch?v=NLbyHffKQuU">Leaflet story in 13 minutes</a></div>
+
+
+<div>En fait, tout n'est pas si simple pour 3 raisons:</div>
+
+<div>#1: les tuiles raster ne peuvent pas être interactives <em>MAIS</em></div>
+<div><a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (Mapbox) rend cela possible.</div>
+<div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
+<div style="color: black"><img src="images/parks-conservancy.png">Stamen used this technique on the <a href="http://www.parksconservancy.org/map/#/?coords=15:37.8016:-122.4659&date=1394668684907">Parks Conservancy map.</a></div>
+
+<div>#2: <a href="http://d3js.org">D3 :</a> pas de tuiles</div>
+<div>c'est très compliqué de faire une carte détaillée (street map) en D3 <em>MAIS</em></div>
+<div>on peut faire des choses compliquées/pas possibles avec des slippy maps</div>
+<div style="color: black"><img src="images/d3-examples/d3_choropleth.png">choropleth maps<br><a href="http://sta.mn/jyx">sta.mn/jyx</a></div>
+<div>(possible avec CartoDB aussi)</div>
+<div style="color: black"><img src="images/d3-examples/d3_cartogram.png">cartogrammes<br><a href="http://sta.mn/q99">sta.mn/q99</a></div>
+<div style="color: black"><img src="images/d3-examples/projection_transitions2.png">d'autres projections <a href="http://sta.mn/jfs">sta.mn/jfs</a></div>
+<div>Et aussi D3 = SVG = utilisable dans Illustrator</div>
+<div style="color: black"><img src="images/d3-examples/geo.png">D3</div>
+<div style="color: black"><img src="images/d3-examples/racial-divide.png">IS</div>
+<div style="color: black"><img src="images/d3-examples/topojson.png">IN</div>
+<div style="color: black"><img src="images/d3-examples/drought.png">SANE</div>
+<div>Plus d'exemples/démos avec D3: <a href="http://exposedata.com/talk/d3-geo/">d3.geo presentation</a></div>
+<div>Très puissant, courbe d'apprentissage élevée</div>
+<div>Alternative: dataviz, avec slippy maps = <em>CartoDB</em></div>
+
+<div>#3: les tuiles sont toujours des rasters/images <em>MAIS</em></div>
+<div>En fait, non</div>
+<div><img src="images/vector_tiles.png"><em>tuiles vectorielles!</em> <a href="http://bl.ocks.org/wboykinm/7393674">(demo)</a></div>
+<div>Google, encore et toujours</div>
+<div><img src="images/vector_google.png"></div>
+<div><img src="images/vector_google_zoom.gif"></div>
+<div><a href="https://www.mapbox.com/blog/vector-tiles/">tuiles vectorielles</a>: représentation géométrique</div>
+<div>tuiles vectorielles :<br><em><s>style</s></em><br>(pas du SVG)</div>
+<div>tuiles vectorielles :<br><em><s>géographie</s></em><br>(offsets dans la tuile)</div>
+<div>Rendu <em>côté serveur :</em><br> Mapbox Studio Classic...</div>
+<div>Rendu <em>côté client : WebGL</em><br><a href="https://www.mapbox.com/blog/mapbox-gl-js/">Mapbox GL</a>, <a href="https://mapzen.com/projects/tangram/Tangram">Mapzen Tangram</a>...</div> </div>
+<div>Voir: <a href="http://www.macwright.org/presentations/jsgeo/notes/">cette prrésentation</a></div>
+
+<div>Par où commencer?</div>
+<div>Fabriquer ses propres tuiles?</div>
+<div>Non? Servez-vous! <a href="http://wiki.openstreetmap.org/wiki/Tiles">OpenStreetMap</a>, <a href="http://cloudmade.com/products/map-tiles">CloudMade</a>, <a href="http://maps.stamen.com">Stamen</a>, <a href="https://www.mapbox.com/tour/#maps">MapBox</a>, <a href="http://developer.mapquest.com/web/products/open/map">MapQuest</a></div>
+<div>Oui? <a href="https://www.mapbox.com/mapbox-studio-classic/">Mapbox Studio</a>, <a href="https://github.com/kosmtik/kosmtik">Kosmtik</a>.</div>
+<div><img src="images/worldwide-wood.png"> <em>Pretty!</em></div>
+<div><a href="https://www.mapbox.com/carto">CartoCSS</a></div>
+<div>Héberger les tuiles : <a href="https://www.mapbox.com/plans/">MapBox</a>, ou...</div>
+<div>Servir les tuiles avec son propre serveur de tuiles: <a href="https://github.com/klokantech/tileserver-php/">TileServer.php</a> / <a href="http://tilestache.org">TileStache</a> / <a href="http://tilecache.org">TileCache</a> / <a href="https://github.com/mapbox/tilestream">TileStream</a> / <a href="https://github.com/chelm/mbtiles-server">mbtiles-server</a> / <a href="http://wiki.openstreetmap.org/wiki/Mod_tile">mod_tile</a></div>
+<div>Plus de détails : <a href="https://erictheise.github.io/geostack-deck"> Eric Theise's Geo Platform tutorial</a></div>
+<div>Ajouter des content layers?</div>
+<div>Non? Mettez toutes vos données dans les tuiles, utilisez éventuellement UTFGrid pour l'interactivité</div>
+<div>Oui? Convertissez vos Shapefiles en GeoJSON avec <a href="http://ogre.adc4gis.com/">OGRE</a> ou fabriquez vos geoJSON: <a href="http://geojson.io">geojson.io</a></div>
+<div><a href="https://github.com/mbostock/topojson">TopoJSON</a>, plus compact</a></div>
+<div>Enfin, <a href="http://cartodb.com">CartoDB</a> fait tout ça pour vous!</div>
+<div><img src="images/random/lurn_moar.jpg">Plein de ressources ici:<br><a href="http://maptime.io/lessons-resources/">http://maptime.io/lessons-resources/</a></div>
+
+<div>Merci:</div>
+<div><a href="https://github.com/lyzidiamond">Lyzi Diamond</a></div>
+<div><a href="http://stamen.com">Stamen</a></div>
+<div>Everyone at <a href="http://maptime.github.io">#maptime</a></div>
+<div>You!</div>
+<div>Presentation made with <a href="http://www.macwright.org/big/">big</a></div>
