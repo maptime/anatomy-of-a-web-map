@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <style type="text/css">
+      #mapdiv { height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="mapdiv"></div>
+
+    <script>
+
+      var geojsonFeature = {
+        "type": "Feature",
+        "properties": {
+            "name": "PARISOMA"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.41598, 37.77349]
+        }
+      };
+
+      var mapvar = L.map('mapdiv').setView([37.7706,-122.3782],12);
+
+      var tileLayer = L.tileLayer(
+        'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg', 
+        {
+          attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under CC BY 3.0. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under CC BY SA.'
+        }
+      );
+
+      mapvar.addLayer(tileLayer);
+
+      var geojsonLayer = L.geoJson(
+        geojsonFeature, 
+        {
+          onEachFeature: function(feature, layer) { layer.bindPopup(feature.properties.name); }
+        }
+      );
+
+      mapvar.addLayer(geojsonLayer);
+
+    </script>
+
+  </body>
+</html>
