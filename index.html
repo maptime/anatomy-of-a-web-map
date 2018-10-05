@@ -85,8 +85,8 @@ window.onload = function() {
 };
 </script></head><body>
 <div>Anatomy of a <em>Web Map</em></div>
-<div>By <a href="http://stamen.com/studio/alan">Alan McConchie</a> :) and <a href="http://stamen.com/studio/beth">Beth Schechter</a> :D</div>
-<div>Housekeeping!<br>You can follow along here: <a href="http://sta.mn/qhg">sta.mn/qhg</a>. Links are in blue boxes, <em>green</em> is just emphasis. You can comment and edit on <a href="https://github.com/maptime/anatomy-of-a-web-map/">github!</a></div>
+<div>By Will Skora with help from <a href="http://stamen.com/studio/alan">Alan McConchie</a> :) and <a href="http://stamen.com/studio/beth">Beth Schechter</a></div>
+<div>Housekeeping!<br>You can follow along here: <a href="http://sta.mn/qhg">UPDATE URL</a>. Links are in blue boxes, <em>green</em> is just emphasis. You can comment and edit on <a href="https://github.com/maptime/anatomy-of-a-web-map/">github!</a></div>
 <div>Now let's get started :)</div>
 <div>Today we will be talking about the <em>very most basic principles</em> of web mapping.</div>
 <div>We're including a little history, so you can get an idea of how web maps have come to be.</div>
@@ -105,10 +105,11 @@ window.onload = function() {
 <div>What is a web map?</div>
 <div>To answer that question, maybe it's more helpful to ask,</div>
 <div>How is a <em>web map</em> different than a <em>digital map</em>?</div>
-<div><em>Digital</em>: involves a computer, but might not be accessible by the internet.</div>
+<div><em>Digital</em>: maybe made on a computer, but 1 map at a zoom level*</div>
+<div><img src="images/migration-economist-.jpg"</div>
 <div>A <em>web map</em> is a kind of <em>digital map</em>. And both are obviously quite different from <em>analog</em> maps, such as paper maps and atlases!</div>
 <div>We're talking about web maps that you view in a browser, like...</div>
-<div><img src="images/osm.png"><a href="http://www.openstreetmap.org/">OpenStreetMap.org</a></div>
+<div><img src="images/osm.png"><a href="https://www.openstreetmap.org/">OpenStreetMap.org</a></div>
 <div><img src="images/google-map.png"><a href="https://www.google.com/maps/preview">maps.google.com</a></div>
 <div><img src="images/mapsdotstamen.png"><a href="http://maps.stamen.com">maps.stamen.com</a></div>
 <div><img src="images/iphone_maps.jpg">Making maps for <em>mobile devices</em> can be similar, but we're not talking about that today.</div> 
@@ -147,7 +148,7 @@ window.onload = function() {
 <div>http://<em>tile.openstreetmap.org</em>/4/2/6.png -- this is the name of the tile server.</div>
 <div>http://tile.openstreetmap.org/<em>4</em>/2/6.png -- this is the z value, or the zoom level.</div>
 <div>http://tile.openstreetmap.org/4/<em>2/6</em>.png -- This is the x/y value, or the place in the grid where the tile lives.</div>
-<div>Google maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
+<div>Most* web maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
 <div>We'll see more map projections later...!</div>
 <div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles at the base.</div>
@@ -155,7 +156,7 @@ window.onload = function() {
 <div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em> or <em>feature layers</em>.</div>
   <div>*(Not every web map contains a feature layer, but they are fairly typical.)</div>
 <div>They are often <em>vector</em> layers (point, line, polygon). Sometimes you can interact with them (clicking to produce a popup, for example).</div>
-<div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <em>KML</em>, or more recently, <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a></div>
+<div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a>or</div>
 <div>Here's the breakdown of how these pieces fit together:</div>
 <div><img src="images/basemap-datalayers-01.png"></div>
 <div><img src="images/basemap-datalayers-02.png"></div>
@@ -170,18 +171,17 @@ window.onload = function() {
 <div><img src="images/leaflet_code.png"></div>
 <div><img src="images/anatomy-of-a-web-map.png"></div>
 <div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
-<div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a> (which is making a comeback) / <a href="http://modestmaps.com">Modest Maps</a> / <a href="http://polymaps.org">Polymaps</a></div>
-<div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="http://developer.here.com/web/guest/javascript-apis">Nokia HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
+<div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a></div>
+<div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="https://developer.here.com/">HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
 <div>3 exceptions to the simplified story!</div>
 <div>Exception #1: Tiles are always rasters <em>EXCEPT</em> when they're not!</div>
-<div><img src="images/vector_tiles.png"><em>vector tiles!</em> What are they? <a href="http://bl.ocks.org/wboykinm/7393674">(unrelated demo)</a></div>
-<div><a href="https://www.mapbox.com/blog/vector-tiles/">vector tiles</a>: they are an alternative to a database that makes raster tiles. They still render to rasters for display</div>
 <div><em>Raster:</em> ask for data to fit into tile</div>
 <div><em>Vector:</em> already have vector data sliced up in the way that I will make raster tiles</div>
 <div>So someone has to go through and chop up that data, like <a href="https://www.mapbox.com/blog/vector-tiles/">MapBox</a></div>
-<div>Exception #2: Can’t interact with features on a raster. BUT <a href="https://www.mapbox.com/developers/utfgrid/">UTFGrid</a> (Mapbox invention) makes it possible.</div>
 <div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
 <div style="color: black"><img src="images/parks-conservancy.png">Stamen used this technique on the <a href="http://www.parksconservancy.org/map/#/?coords=15:37.8016:-122.4659&date=1394668684907">Parks Conservancy map.</a></div>
+<div><img src="images/vector_tiles.png"><em>vector tiles!</em> What are they? <a href="http://bl.ocks.org/wboykinm/7393674">(unrelated demo)</a></div>
+<div><a href="https://www.mapbox.com/blog/vector-tiles/">vector tiles</a>: they are an alternative to a database that makes raster tiles. They still render to rasters for display</div>
 <div>Exception #3: <a href="http://d3js.org">D3</a> exists outside the world of tiles</div>
 <div>you can’t easily make road map in D3 <em>BUT</em> can do things that are clumsy in slippy maps like...</div>
 <div style="color: black"><img src="images/d3-examples/d3_choropleth.png">choropleth maps or... <a href="http://sta.mn/jyx">sta.mn/jyx</a></div>
@@ -195,7 +195,7 @@ window.onload = function() {
 <div>Very powerful, but steep learning curve</div>
 <div>So.<br>Where do I start?</div>
 <div>Do I need to make my own custom tiles?</div>
-<div>No? Use these! <a href="http://wiki.openstreetmap.org/wiki/Tiles">OpenStreetMap</a>, <a href="http://cloudmade.com/products/map-tiles">CloudMade</a>, <a href="http://maps.stamen.com">Stamen</a>, <a href="https://www.mapbox.com/tour/#maps">MapBox</a>, <a href="http://developer.mapquest.com/web/products/open/map">MapQuest</a></div>
+<div>No? Use these! <a href="http://wiki.openstreetmap.org/wiki/Tiles">OpenStreetMap</a>, <a href="http://maps.stamen.com">Stamen</a>, <a href="https://www.mapbox.com/tour/#maps">MapBox</a>, <a href="http://developer.mapquest.com/web/products/open/map">MapQuest</a></div>
 <div>Yes? Use <a href="https://www.mapbox.com/tilemill/">TileMill</a> to design your own tiles.</div>
 <div><img src="images/worldwide-wood.png"> <em>Pretty!</em></div>
 <div>Style your map with <a href="https://www.mapbox.com/carto">CartoCSS</a> (or just carto)</div>
