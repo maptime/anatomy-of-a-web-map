@@ -1,48 +1,70 @@
+!<DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-    <style type="text/css">
-      #mapdiv { height: 100%; }
-    </style>
-  </head>
-  <body>
-    <div id="mapdiv"></div>
+    <head>
+        <meta charset="utf-8" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
 
-    <script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ -->
 
-      var geojsonFeature = {
-        "type": "Feature",
-        "properties": {
-            "name": "PARISOMA"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-122.41598, 37.77349]
-        }
-      };
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 
-      var mapvar = L.map('mapdiv').setView([37.7706,-122.3782],12);
+<style>
 
-      var tileLayer = L.tileLayer(
-        'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg', 
-        {
-          attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under CC BY 3.0. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under CC BY SA.'
-        }
-      );
+.main-class {
+display: flex;
+}
 
-      mapvar.addLayer(tileLayer);
+#mapid {
+display: flex;
+float: left;
+width: 60%; 
+height: 1300px;
+}
 
-      var geojsonLayer = L.geoJson(
-        geojsonFeature, 
-        {
-          onEachFeature: function(feature, layer) { layer.bindPopup(feature.properties.name); }
-        }
-      );
+#text {
+display: flex;
+font-size: 40px; 
+margin: 100px 100px 0 100px;}
+</style>
+</head>
 
-      mapvar.addLayer(geojsonLayer);
+<body>	
+<main class="main-class">
+<div id='mapid'></div>
+<div id='text'><h3>Base Map</h3> 
+<h4>Tools for styling (MapBox Studio Classic, Geoserver, QGIS)</h4>
+<h3>Data Layers</h3> </br> 
+<h4>Polygons </h4>
+</div>
 
-    </script>
+<script>
+                    
+// var basemap = new L.TileLayer('http://{s}.tiles.mapbox.com/v3/skorasaurus.5eb85050/{z}/{x}/{y}.png', {maxZoom: 13});
+var baseMap = new L.TileLayer('https://api.mapbox.com/styles/v1/skorasaurus/cjm8df5wd09sc2spfluycp0oq/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2tvcmFzYXVydXMiLCJhIjoiaEdGTUZWTSJ9.osOC8tWU3bMaNprVNoEu7g', {maxZoom: 21});
+var latlng = new L.LatLng(41.501860,-81.635799);
 
-  </body>
+var myMap = new L.Map('mapid', {center: latlng, zoom: 10, layers: [baseMap]});
+
+
+var theMarker = L.marker([41.501860,-81.835799]).addTo(myMap);
+
+var geojsonLayer = L.geoJson.ajax("locations.geojson");
+
+geojsonLayer.addTo(myMap);
+
+ // Add AJAX request for data
+        // var counties = $.ajax({
+        //   url:"./locations.geojson",
+        //   dataType: "json",
+        //   success: console.log("County data successfully loaded."),
+        //   error: function (xhr) {
+        //     alert(xhr.statusText)
+        //   }
+        // })
+
+</script>
+</main>
+</body>
 </html>

@@ -105,8 +105,8 @@ window.onload = function() {
 <div>What is a web map?</div>
 <div>To answer that question, maybe it's more helpful to ask,</div>
 <div>How is a <em>web map</em> different than a <em>digital map</em>?</div>
-<div><em>Digital</em>: maybe made on a computer, but 1 map at a zoom level*</div>
-<div><img src="images/migration-economist-.jpg"</div>
+<div><em>Digital</em>: maybe made on a computer, but a map at a 1 zoom level*</div>
+<div><img src="images/migration-economist-.jpg"></div>
 <div>A <em>web map</em> is a kind of <em>digital map</em>. And both are obviously quite different from <em>analog</em> maps, such as paper maps and atlases!</div>
 <div>We're talking about web maps that you view in a browser, like...</div>
 <div><img src="images/osm.png"><a href="https://www.openstreetmap.org/">OpenStreetMap.org</a></div>
@@ -151,12 +151,13 @@ window.onload = function() {
 <div>Most* web maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
 <div>We'll see more map projections later...!</div>
-<div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles at the base.</div>
+<div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with raster tiles at the base.</div>
 <div>Not surprisingly, a collection of <em>raster</em> tiles makes up what we call the map's <em>base layer.</em></div>
-<div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em> or <em>feature layers</em>.</div>
+<div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>feature layers</em>.</div>
   <div>*(Not every web map contains a feature layer, but they are fairly typical.)</div>
-<div>They are often <em>vector</em> layers (point, line, polygon). Sometimes you can interact with them (clicking to produce a popup, for example).</div>
-<div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a>or</div>
+<div>Other layers are of satellite imagery; </div>
+<div>They are often <em>vector</em> layers (points, lines, polygons). Sometimes you can interact with them (clicking to produce a popup, for example).</div>
+<div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a>* </div>
 <div>Here's the breakdown of how these pieces fit together:</div>
 <div><img src="images/basemap-datalayers-01.png"></div>
 <div><img src="images/basemap-datalayers-02.png"></div>
@@ -171,15 +172,13 @@ window.onload = function() {
 <div><img src="images/leaflet_code.png"></div>
 <div><img src="images/anatomy-of-a-web-map.png"></div>
 <div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
-<div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a></div>
-<div>And don't forget: <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> / <a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">Bing Maps API</a> / <a href="https://developer.here.com/">HERE Maps API</a> / <a href="https://developers.arcgis.com/en/javascript/">ESRI ArcGIS API</a></div>
-<div>3 exceptions to the simplified story!</div>
+<div>The javascript: we recommend <a href="http://leafletjs.com">Leaflet</a>, although there are others: <a href="http://openlayers.org">OpenLayers</a>, and <a href="https://www.mapbox.com/mapbox.js/api/">mapbox.js</a> </div>
+<div>But, now there's </div>
 <div>Exception #1: Tiles are always rasters <em>EXCEPT</em> when they're not!</div>
 <div><em>Raster:</em> ask for data to fit into tile</div>
+
 <div><em>Vector:</em> already have vector data sliced up in the way that I will make raster tiles</div>
 <div>So someone has to go through and chop up that data, like <a href="https://www.mapbox.com/blog/vector-tiles/">MapBox</a></div>
-<div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
-<div style="color: black"><img src="images/parks-conservancy.png">Stamen used this technique on the <a href="http://www.parksconservancy.org/map/#/?coords=15:37.8016:-122.4659&date=1394668684907">Parks Conservancy map.</a></div>
 <div><img src="images/vector_tiles.png"><em>vector tiles!</em> What are they? <a href="http://bl.ocks.org/wboykinm/7393674">(unrelated demo)</a></div>
 <div><a href="https://www.mapbox.com/blog/vector-tiles/">vector tiles</a>: they are an alternative to a database that makes raster tiles. They still render to rasters for display</div>
 <div>Exception #3: <a href="http://d3js.org">D3</a> exists outside the world of tiles</div>
@@ -198,7 +197,6 @@ window.onload = function() {
 <div>No? Use these! <a href="http://wiki.openstreetmap.org/wiki/Tiles">OpenStreetMap</a>, <a href="http://maps.stamen.com">Stamen</a>, <a href="https://www.mapbox.com/tour/#maps">MapBox</a>, <a href="http://developer.mapquest.com/web/products/open/map">MapQuest</a></div>
 <div>Yes? Use <a href="https://www.mapbox.com/tilemill/">TileMill</a> to design your own tiles.</div>
 <div><img src="images/worldwide-wood.png"> <em>Pretty!</em></div>
-<div>Style your map with <a href="https://www.mapbox.com/carto">CartoCSS</a> (or just carto)</div>
 <div>You can host these files on <a href="https://www.mapbox.com/plans/">MapBox</a>, or...</div>
 <div>Serve the tiles by running your own tile server. For example: <a href="https://github.com/klokantech/tileserver-php/">TileServer.php</a> / <a href="http://tilestache.org">TileStache</a> / <a href="http://tilecache.org">TileCache</a> / <a href="https://github.com/mapbox/tilestream">TileStream</a> / <a href="https://github.com/chelm/mbtiles-server">mbtiles-server</a> / <a href=http://wiki.openstreetmap.org/wiki/Mod_tile">mod_tile</a></div>
 <div>See Eric Theise's <a href="http://erictheise.com/maptime_platform_slides">Geo Platform tutorial</a> for all the gritty details</div>
