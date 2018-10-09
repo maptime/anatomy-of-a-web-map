@@ -152,13 +152,15 @@ window.onload = function() {
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
 <div>We'll see more map projections later...!</div>
 <div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with raster tiles at the base.</div>
+<div><em> Raster </em> is an image, comprised of many pixels </div>
 <div>Not surprisingly, a collection of <em>raster</em> tiles makes up what we call the map's <em>base layer.</em></div>
 <div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>feature layers</em>.</div>
   <div>*(Not every web map contains a feature layer, but they are fairly typical.)</div>
-<div>Other layers are of satellite imagery; </div>
-<div>They are often <em>vector</em> layers (points, lines, polygons). Sometimes you can interact with them (clicking to produce a popup, for example).</div>
+<div>These are usually <em>vector</em> layers (points, lines, polygons). Sometimes you can interact with them (clicking to produce a popup, for example).</div>
+<div><em>Vector</em>: geometry-based</div>
 <div>Filetypes: GIS uses <em>shapefiles</em>, but web maps prefer <a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a>* </div>
 <div>Here's the breakdown of how these pieces fit together:</div>
+<div><a href="leaflet.html">leaflet</a></div> 
 <div><img src="images/basemap-datalayers-01.png"></div>
 <div><img src="images/basemap-datalayers-02.png"></div>
 <div><img src="images/basemap-datalayers-03.png"></div>
@@ -168,7 +170,6 @@ window.onload = function() {
 <div>Make sense?</div>
 <div>Great!</div>
 <div>Now we're ready to dive a little deeper into the whole <em>web map anatomy!</em></div>
-<div><img src="images/leaflet-toner-snapshot-giant.png"><em>The simplest possible web map:</em> <a href="http://sta.mn/v5h">sta.mn/v5h</a></div>
 <div><img src="images/leaflet_code.png"></div>
 <div><img src="images/anatomy-of-a-web-map.png"></div>
 <div>What does the javascript library do? Grabs the tiles, adds content layer, handles interaction.</div>
