@@ -8,43 +8,98 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 
 <style>
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: 'Open Sans', 'sans-serif';
+/*  background-color: #fff;
+  color: #444;*/
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
 .main-class {
-display: flex;
-flex-flow: row wrap;
+  /*max-width: 940px;*/
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
 }
 
-#mapid {
-display: flex;
-float: left;
-width: 60%; 
-height: 1300px;
+/*@media screen and (min-width: 600px) {
+*/
+  /* no grid support? */
+  .block-a, .block-b, .block-c {
+    float: left;
+    width: 19.1489%;
+  }
+
+  #map-id {
+    float: right;
+    width: 79.7872%;
+  }
+
+  .main-class {
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  
+  .block-a {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .block-b {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .block-c {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #map-id {
+    grid-column: 2;
+    grid-row: 2 / 7;
+  }
+
+/*}
+*/
+.main-class > * {
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
 }
 
-.text {
-display: flex;
-float: right;
-max-width: 300px;
-max-height: 300px;
-font-size: 40px; 
-margin: 100px 100px 0 100px;
-}
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+/*@supports (display: grid) {
+  .main-class > * {
+    width: auto;
+    margin: 0;
+  }
+}*/
 </style>
 </head>
 
 <body>	
-<main class="main-class">
-<div id='mapid'></div>
-<div class='text'><h3>Base Map</h3> 
-<h4>Tools for styling (MapBox Studio Classic, Geoserver, QGIS)</h4>
-</br> 
+<div class="main-class">  
+  <div id="map-id">
+    <h1>Using negative space</h1>
+  </div>
+  
+  <div class="block-a">Block A</div>
+  <div class="block-b">Block B</div>
+  <div class="block-c">Block C</div>
 </div>
-<div class="text">
-<h3>Data Layers</h3> </br> 
-<h4>Tools for styling and editing 
-(leaflet, openlayers)</h4>
 
-</div>
-</div>
 
 <script>
                     
@@ -53,7 +108,7 @@ var baseMap = new L.TileLayer('https://api.mapbox.com/styles/v1/skorasaurus/cjm8
 
 var latlng = new L.LatLng(41.501860,-81.635799);
 
-var myMap = new L.Map('mapid', {center: latlng, zoom: 10, layers: [baseMap]});
+var myMap = new L.Map("map-id", {center: latlng, zoom: 10, layers: [baseMap]});
 
 
 var theMarker = L.marker([41.501860,-81.835799]).addTo(myMap);
