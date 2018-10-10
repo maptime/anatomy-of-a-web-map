@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+    <title>My new map! </title>	
+        <meta charset="utf-8" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+</head>
+<body>
+
+<div id="map-id" style="width: 60%; height: 600px; border: 1px solid #ccc;"></div>
+
+<script>
+                    
+var basemap = new L.TileLayer('https://api.mapbox.com/styles/v1/skorasaurus/cjm8df5wd09sc2spfluycp0oq/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2tvcmFzYXVydXMiLCJhIjoiaEdGTUZWTSJ9.osOC8tWU3bMaNprVNoEu7g', {maxZoom: 21});
+var latlng = new L.LatLng(41.501860,-81.635799);
+
+var myMap = new L.Map('map-id', {center: latlng, zoom: 10, layers: [basemap]});
+
+var theMarker = L.marker([41.501860,-81.835799]).addTo(myMap);
+
+var myStyle = {
+    "color": "#ff7800",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+var geojsonLayer = L.geoJson.ajax("locations.geojson", { 
+		onEachFeature: function(feature, layer) {
+        	layer.bindPopup(feature.properties.name);
+    	},
+    	{
+    	style: myStyle;
+    	}
+    });
+
+geojsonLayer.addTo(myMap);
+
+
+</script>
+        
+        
+
+</div>
+</body>
+</html>

@@ -1,48 +1,147 @@
+<!doctype html>
 <html>
-  <head>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-    <style type="text/css">
-      #mapdiv { height: 100%; }
-    </style>
-  </head>
-  <body>
-    <div id="mapdiv"></div>
+    <head>
+    <title>My new map! </title>	
+        <meta charset="utf-8" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 
-    <script>
+<style>
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
-      var geojsonFeature = {
-        "type": "Feature",
-        "properties": {
-            "name": "PARISOMA"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-122.41598, 37.77349]
-        }
-      };
+body {
+  margin: 40px;
+  font-family: 'Open Sans', 'sans-serif';
+/*  background-color: #fff;
+  color: #444;*/
+}
 
-      var mapvar = L.map('mapdiv').setView([37.7706,-122.3782],12);
+h1, p {
+  margin: 0 0 1em 0;
+}
 
-      var tileLayer = L.tileLayer(
-        'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg', 
-        {
-          attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under CC BY 3.0. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under CC BY SA.'
-        }
-      );
+.main-class {
+  /*max-width: 940px;*/
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+}
 
-      mapvar.addLayer(tileLayer);
+/*@media screen and (min-width: 600px) {
+*/
+  /* no grid support? */
+  .block-a, .block-b, .block-c {
+    float: left;
+    width: 79.1489%;
+  }
 
-      var geojsonLayer = L.geoJson(
-        geojsonFeature, 
-        {
-          onEachFeature: function(feature, layer) { layer.bindPopup(feature.properties.name); }
-        }
-      );
+  #map-id {
+    float: right;
+    width: 79.7872%;
+  }
 
-      mapvar.addLayer(geojsonLayer);
+  .main-class {
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  
+  .block-a {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .block-b {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .block-c {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #map-id {
+    grid-column: 2;
+    grid-row: 2 / 7;
+  }
 
-    </script>
+/*}
+*/
+.main-class > * {
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
 
-  </body>
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+/*@supports (display: grid) {
+  .main-class > * {
+    width: auto;
+    margin: 0;
+  }
+}*/
+</style>
+</head>
+
+<body>	
+<div class="main-class">  
+  <div id="map-id">
+    <h1>Using negative space</h1>
+  </div>
+  
+  <div class="block-a"><h3>Base map</h3>(styling can be done in mapbox studio classic; geoserver; </div>
+  <div class="block-b"><h3>Data layer</h3>(styling can be done with the javascript library (leaflet, openlayers)</div>
+  <div class="block-c">Block C</div>
+</div>
+
+
+<script>
+                    
+// var basemap = new L.TileLayer('http://{s}.tiles.mapbox.com/v3/skorasaurus.5eb85050/{z}/{x}/{y}.png', {maxZoom: 13});
+var baseMap = new L.TileLayer('https://api.mapbox.com/styles/v1/skorasaurus/cjm8df5wd09sc2spfluycp0oq/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2tvcmFzYXVydXMiLCJhIjoiaEdGTUZWTSJ9.osOC8tWU3bMaNprVNoEu7g', {maxZoom: 21});
+
+var latlng = new L.LatLng(41.501860,-81.635799);
+
+var myMap = new L.Map("map-id", {center: latlng, zoom: 10, layers: [baseMap]});
+
+
+var theMarker = L.marker([41.501860,-81.835799]).addTo(myMap);
+
+var myStyle = {
+    "color": "#ff7800",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+var geojsonLayer = L.geoJson.ajax("locations.geojson", { 
+		onEachFeature: function(feature, layer) {
+        	layer.bindPopup(feature.properties.name);
+    	},
+
+    	style: function (feature) {
+        return myStyle;
+    	}
+    });
+
+geojsonLayer.addTo(myMap);
+
+ // Add AJAX request for data
+        // var counties = $.ajax({
+        //   url:"./locations.geojson",
+        //   dataType: "json",
+        //   success: console.log("County data successfully loaded."),
+        //   error: function (xhr) {
+        //     alert(xhr.statusText)
+        //   }
+        // })
+
+</script>
+</main>
+</body>
 </html>
