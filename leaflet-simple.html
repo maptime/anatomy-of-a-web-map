@@ -31,13 +31,13 @@ var geojsonLayer = L.geoJson.ajax("locations.geojson", {
 		onEachFeature: function(feature, layer) {
         	layer.bindPopup(feature.properties.name);
     	},
-
-    	style: function (feature) {
-        return myStyle;
+    	{
+    	style: myStyle;
     	}
     });
 
 geojsonLayer.addTo(myMap);
+
 
 </script>
         
